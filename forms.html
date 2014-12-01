@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="../../favicon.ico" rel="icon">
+
+    <title>BetterWorks Styleguide - Forms</title><!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="fonts/ss-standard.css" rel="stylesheet">
+</head>
+
+<body onload="prettyPrint()">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+-->
+                <button class="navbar-toggle side" data-toggle="offcanvas"
+                style="float: left; margin-left: 10px;" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class=
+                "icon-bar"><span class=
+                "glyphicon glyphicon-arrow-right sidebar-arrow"></span></span>
+                <span class="icon-bar"></span></button> <a class="navbar-brand"
+                href="#"><img src="img/logo-small-inverse.png" alt="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav"></ul>
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                <div class="list-group sidebar">
+                    <a class="list-group-item" href="index.html">Styleguide</a>
+                    <a class="list-group-item" href="grid.html">Grid</a>
+                    <a class="list-group-item" href=
+                    "typography.html">Typography</a> <a class="list-group-item"
+                    href="button_progress_bars.html">Buttons & Progress
+                    Bars</a> <a class="list-group-item active" href=
+                    "#">Forms</a> <a class="list-group-item" href=
+                    "colors.html">Colors</a> <a class="list-group-item" href=
+                    "dashboard_modules.html">Dashboard Modules</a> <a class=
+                    "list-group-item" href="feed_items.html">Feed Items</a>
+                    <a class="list-group-item" href="lists.html">Tables & Lists</a>
+                </div>
+            </div><!--/.sidebar-offcanvas-->
+
+            <div class="col-sm-12 col-sm-offset-3 main">
+                <div class="row">
+                    <div class="col-md-8 col-sm-9">
+                        <h1 class="styleguide"><a href=
+                        "index.html"><small>Styleguide</small></a></h1>
+
+                        <h1 class="styleguideTitle">Form Elements</h1>
+
+                        <p class="phead">Forms are used frequently throughout
+                        the app. They allow users to input data that will be
+                        sent to our servers for processing. We use multiple
+                        types including: checkboxes, radio buttons, and text
+                        fields.</p><br>
+                    </div><!-- end of col-sm-8 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Text Inputs</h1>
+
+                        <h3>Normal Fields</h3>
+                    </div>
+
+                    <div class="col-md-6 col-sm-7">
+                        <p>Individual form controls automatically receive some
+                        global styling. All textual <code>&lt;input&gt;</code>,
+                        <code>&lt;textarea&gt;&lt;/textarea&gt;</code>, and
+                        <code>&lt;select&gt;&lt;/select&gt;</code> elements
+                        with <code>.form-control</code> are set to width: 100%;
+                        by default. Wrap labels and controls in
+                        <code>.form-group</code> for optimum spacing.</p><br>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleTextInput">Text
+                                Field</label> <input class="form-control" id=
+                                "exampleTextInput" placeholder="Text input"
+                                type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="disabledTextInput">Disabled
+                                Field</label> <input class="form-control"
+                                disabled="disabled" id="disabledTextInput"
+                                placeholder="Disabled input" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="textAreaExample">Text Area</label> 
+                                <textarea class="form-control" id=
+                                "textAreaExample" placeholder=
+                                "Enter all the text!" rows="3">
+</textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Email
+                                Field</label> <input class="form-control" id=
+                                "exampleInputEmail" placeholder="Enter email"
+                                type="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputPassword">Password
+                                Field</label> <input class="form-control" id=
+                                "exampleInputPassword" placeholder="Password"
+                                type="password">
+
+                                <p class="help-block">Example block-level help
+                                text here.</p>
+                            </div>
+                        </form><br>
+                    </div><!-- end of col 7 -->
+
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;form role="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleTextInput"&gt;Text Field&lt;/label&gt;
+    &lt;input type="text" id="exampleTextInput" class="form-control" placeholder="Text input"&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="disabledTextInput"&gt;Disabled Field&lt;/label&gt;
+    &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" disabled="disabled"&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="textAreaExample"&gt;Text Area&lt;/label&gt;
+    &lt;input class="form-control" rows="3" id="textAreaExample" placeholder="Enter all the text!"&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail"&gt;Email Field&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email"&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputPassword"&gt;Email Field&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="exampleInputPassword" placeholder="Password"&gt;
+    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+&lt;/form&gt;  
+
+&lt;style&gt;
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,0.64);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,0.64);
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Text Inputs</h1>
+
+                        <h3>Small and Large Fields</h3>
+                    </div>
+
+                    <div class="col-md-6 col-sm-7">
+                        <p>Set heights using classes like
+                        <code>.input-lg</code>, and set widths using grid
+                        column classes like <code>.col-sm-*</code>. Create
+                        taller or shorter form controls that match button
+                        sizes.</p><br>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleLargeInput">Large
+                                Field</label> <input class=
+                                "form-control input-lg" id="exampleLargeInput"
+                                placeholder="Large input" type="text">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleSmallInput">Small
+                                Field</label> <input class=
+                                "form-control input-sm" id="exampleSmallInput"
+                                placeholder="Small input" type="text">
+                            </div>
+                        </form><br>
+                    </div><!-- end of col 7 -->
+
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;form role="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleLargeInput"&gt;Large Field&lt;/label&gt;
+    &lt;input class="form-control input-lg" type="text" placeholder="Large input" id="exampleLargeInput"&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleSmallInput"&gt;Small Field&lt;/label&gt;
+    &lt;input class="form-control input-sm" type="text" placeholder="Small input" id="exampleSmallInput"&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+&lt;/form&gt;  
+
+&lt;style&gt;
+.input-lg,
+.form-group-lg .form-control {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.33;
+  border-radius: 2px;
+}
+.input-sm,
+.form-group-sm .form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Validation States</h1>
+                    </div>
+
+                    <div class="col-md-6 col-sm-7">
+                        <p>Bootstrap includes validation styles for error,
+                        warning, and success states on form controls. To use,
+                        add <code>.has-warning</code>, <code>.has-error</code>,
+                        or <code>.has-success</code> to the parent element. Any
+                        <code>.control-label</code>,
+                        <code>.form-control</code>, and
+                        <code>.help-block</code> within that element will
+                        receive the validation styles.</p><br>
+
+                        <form>
+                            <div class="form-group has-success">
+                                <label class="control-label" for=
+                                "inputSuccess1">Input with success</label>
+                                <input class="form-control" id="inputSuccess1"
+                                type="text">
+
+                                <p class="help-block">Example block-level help
+                                text here.</p>
+                            </div>
+
+                            <div class="form-group has-warning">
+                                <label class="control-label" for=
+                                "inputWarning1">Input with warning</label>
+                                <input class="form-control" id="inputWarning1"
+                                type="text">
+
+                                <p class="help-block">Example block-level help
+                                text here.</p>
+                            </div>
+
+                            <div class="form-group has-error">
+                                <label class="control-label" for=
+                                "inputError1">Input with error</label>
+                                <input class="form-control" id="inputError1"
+                                type="text">
+
+                                <p class="help-block">Example block-level help
+                                text here.</p>
+                            </div>
+                        </form><br>
+                    </div>
+
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;form role="form"&gt;
+  &lt;div class="form-group has-success"&gt;
+    &lt;label class="control-label" for="inputSuccess1"&gt;Input with success&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputSuccess1"&gt;
+    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group has-warning"&gt;
+    &lt;label class="control-label" for="inputWarning1"&gt;Input with warning&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputWarning1"&gt;
+    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;div class="form-group has-error"&gt;
+    &lt;label class="control-label" for="inputError1"&gt;Input with error&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputError1"&gt;
+    &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+&lt;/form&gt;  
+  
+&lt;style&gt;
+/* Success State */
+.has-success .form-control {
+  border-color: #82BB41;
+  background-color: #E0EECF;
+}
+.has-success .form-control:focus {
+  border-color: #70A438;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #82BB41;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #82BB41;
+}
+/* Warning State */
+.has-warning .form-control {
+  background-color: #FCF9D8;
+  border-color: #F4E564;
+}
+.has-warning .form-control:focus {
+  border-color: #D2C658;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #F4E564;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #F4E564;
+}
+/* Error State */
+.has-error .form-control {
+  border-color: #E36F69;
+  background-color: #F8DBDA;
+}
+.has-error .form-control:focus {
+  border-color: #C5605B;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #E36F69;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #E36F69;
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Check Boxes</h1>
+                    </div>
+
+                    <div class="col-md-6 col-sm-7">
+                        <p>Checkboxes are for selecting one or several options
+                        in a list.</p><br>
+
+                        <form>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <input checked id="test1" type="checkbox">
+                                    <label for="test1">Checkbox 1</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="test2" type="checkbox">
+                                    <label for="test2">Checkbox 2</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="test3" type="checkbox">
+                                    <label for="test3">Checkbox 3</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="test4" type="checkbox">
+                                    <label for="test4">Checkbox 4</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input disabled="disabled" id="test5" type=
+                                    "checkbox"> <label for="test5">Checkbox 5
+                                    (Inactive)</label>
+                                </div>
+                            </div>
+                        </form><br>
+                    </div><!-- end of col 7 -->
+
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;form role="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;input type="checkbox" id="test1" checked&gt;
+      &lt;label for="test1"&gt;Checkbox 1&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of checkbox --&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;input type="checkbox" id="test2"&gt;
+      &lt;label for="test2"&gt;Checkbox 2&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of checkbox --&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;input type="checkbox" id="test3"&gt;
+      &lt;label for="test3"&gt;Checkbox 3&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of checkbox --&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;input type="checkbox" id="test4"&gt;
+      &lt;label for="test4"&gt;Checkbox 4&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of checkbox --&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;input type="checkbox" id="test5" disabled="disabled"&gt;
+      &lt;label for="test5"&gt;Checkbox 5&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of checkbox --&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+&lt;/form&gt;  
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Radio Buttons</h1>
+                    </div>
+
+                    <div class="col-md-6 col-sm-7">
+                        <p>Radios buttons are for selecting one option from
+                        many.</p><br>
+
+                        <form>
+                            <div class="form-group">
+                                <div class="radio">
+                                    <input checked id="radio1" name=
+                                    "radioExample" type="radio" value="">
+                                    <label for="radio1">Radio 1</label>
+                                </div>
+
+                                <div class="radio">
+                                    <input id="radio2" name="radioExample"
+                                    type="radio" value=""> <label for=
+                                    "radio2">Radio 2</label>
+                                </div>
+
+                                <div class="radio">
+                                    <input id="radio3" name="radioExample"
+                                    type="radio" value=""> <label for=
+                                    "radio3">Radio 3</label>
+                                </div>
+
+                                <div class="radio">
+                                    <input id="radio4" name="radioExample"
+                                    type="radio" value=""> <label for=
+                                    "radio4">Radio 4</label>
+                                </div>
+
+                                <div class="radio">
+                                    <input disabled="disabled" id="radio5"
+                                    name="radioExample" type="radio" value="">
+                                    <label for="radio5">Radio 5
+                                    (Inactive)</label>
+                                </div>
+                            </div>
+                        </form><br>
+                    </div><!-- end of col 7 -->
+
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;form role="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="radio"&gt;
+      &lt;input id="radio1" type="radio" name="radioExample" value="" checked&gt;
+      &lt;label for="radio1"&gt;Radio 1&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of radio --&gt;
+    &lt;div class="radio"&gt;
+      &lt;input id="radio2" type="radio" name="radioExample" value=""&gt;
+      &lt;label for="radio2"&gt;Radio 2&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of radio --&gt;
+    &lt;div class="radio"&gt;
+      &lt;input id="radio3" type="radio" name="radioExample" value=""&gt;
+      &lt;label for="radio3"&gt;Radio 3&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of radio --&gt;
+    &lt;div class="radio"&gt;
+      &lt;input id="radio4" type="radio" name="radioExample" value=""&gt;
+      &lt;label for="radio4"&gt;Radio 4&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of radio --&gt;
+    &lt;div class="radio"&gt;
+      &lt;input id="radio5" type="radio" name="radioExample" value="" disabled="disabled"&gt;
+      &lt;label for="radio5"&gt;Radio 5&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- end of radio --&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+&lt;/form&gt;  
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Date Picker</h1>
+                    </div>
+
+                    <div class="col-md-4 col-sm-5">
+                        <p>Flexible datepicker widget.</p><br>
+
+                        <form id="sandbox-container" name="sandbox-container">
+                            <div class="form-group">
+                                <div class="input-group date">
+                                    <input class="form-control" type=
+                                    "text"><span class=
+                                    "input-group-addon ss-calendar"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="input-group date">
+                                    <input class="form-control input-lg" type=
+                                    "text"><span class=
+                                    "input-group-addon input-group-addon-lg ss-calendar"
+                                    ></span>
+                                </div>
+                            </div>
+                        </form><br>
+                    </div><!-- end of col 7 -->
+
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;form role="form"&gt;
+  &lt;!-- Normal input field --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="input-group date"&gt;
+      &lt;input type="text" class="form-control"&gt;
+      &lt;span class="input-group-addon"&gt;
+        &lt;i class="ss-calendar"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+  &lt;!-- Large input field --&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="input-group date"&gt;
+      &lt;input type="text" class="form-control input-lg"&gt;
+      &lt;span class="input-group-addon"&gt;
+        &lt;i class="ss-calendar"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- end of form group --&gt;
+&lt;/form&gt;  
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+            </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->
+
+        <footer>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <a href="button_progress_bars.html"><button class=
+                    "btn btn-default" type="button">&lt; Buttons & Progress
+                    Bars</button></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="colors.html"><button class="btn btn-default" type=
+                    "button">Colors &gt;</button></a>
+                </div>
+            </div>
+        </footer>
+    </div><!--/.container-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="js/bootstrap-datepicker.js"></script> <script src="js/bootstrap.min.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> <script src="js/offcanvas.js"></script> <script>
+$('#sandbox-container .input-group.date').datepicker({
+        format: 'mm/d/yyyy',
+    });
+    $("#sandbox-container .input-group.date").datepicker("update", new Date());
+    </script>
+    <script src="js/prettify.js" type="text/javascript"></script>
+</body>
+</html>

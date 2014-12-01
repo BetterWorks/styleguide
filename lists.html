@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+		
+		<title>BetterWorks Styleguide - Lists</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Custom styles for this template -->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="fonts/ss-standard.css" rel="stylesheet">
+	</head>
+
+	<body onload="prettyPrint()">
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!--
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+-->
+					<button type="button" class="navbar-toggle side" data-toggle="offcanvas" aria-expanded="false" aria-controls="navbar" style="float: left; margin-left: 10px;">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"><span class="glyphicon glyphicon-arrow-right sidebar-arrow"></span></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo-small-inverse.png"></a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<!--
+<ul class="nav navbar-nav">
+						<li><a href="#">Global Link 1</a></li>
+						<li><a href="#">Global Link 2</a></li>
+						<li><a href="#">Global Link 3</a></li>
+						<li><a href="#">Global Link 4</a></li>
+						<li><a href="#">Global Link 5</a></li>
+					</ul>
+-->
+				</div><!-- /.nav-collapse -->
+			</div><!-- /.container -->
+		</nav><!-- /.navbar -->
+	
+	<div class="container-fluid">
+	
+		<div class="row row-offcanvas row-offcanvas-left">
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+				<div class="list-group sidebar">
+					<a href="index.html" class="list-group-item">Styleguide</a>
+					<a href="grid.html" class="list-group-item">Grid</a>
+					<a href="typography.html" class="list-group-item">Typography</a>
+					<a href="button_progress_bars.html" class="list-group-item">Buttons & Progress Bars</a>
+					<a href="forms.html" class="list-group-item">Forms</a>
+					<a href="colors.html" class="list-group-item">Colors</a>
+					<a href="dashboard_modules.html" class="list-group-item">Dashboard Modules</a>
+					<a href="feed_items.html" class="list-group-item">Feed Items</a>
+					<a href="#" class="list-group-item active">Tables & Lists</a>
+				</div>
+			</div><!--/.sidebar-offcanvas-->
+		
+		<div class="col-sm-12 col-sm-offset-3 main">
+			<div class="row">
+                    <div class="col-md-8 col-sm-9">
+                        <h1 class="styleguide"><a href=
+                        "index.html"><small>Styleguide</small></a></h1>
+
+                        <h1 class="styleguideTitle">Tables & Lists</h1>
+
+                        <p class="phead">For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p><br>
+                    </div><!-- end of col-sm-8 -->
+                </div><!-- end of row -->
+                
+                
+			<div class="row">
+				<div class="col-md-6 col-sm-7">
+					<h1>Tables</h1>
+					<p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.
+					</p>
+				</div><!-- end of col 7 -->
+				<div class="col-sm-15">
+					<br>
+					<div class="table-responsive">
+					<table class="table table-hover">
+					  <thead>
+					    <tr>
+					      <th>Owner</th>
+					      <th>Goal</th>
+					      <th>Checked In</th>
+					      <th>Due</th>
+					      <th>Progress</th>
+					      <th>Action</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td><div class="profile-xtsmall"></div> Person's Name</td>
+					      <td>Goal Name</td>
+					      <td>2 days ago</td>
+					      <td>1/01/15</td>
+					      <td>
+					      	<div class="progress-complete">
+						      	<div class="pull-right progress-bar-text">
+						      		16%
+						      	</div>
+						      	<div class="progress">
+								  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%">
+								    <span class="sr-only">16% Complete (warning)</span>
+								  </div>
+								  <div class="progress-bar progress-bar-expected" style="width: 46%">
+								    <span class="sr-only">46% Expected</span>
+								  </div>
+								</div><!-- end of progress bar -->
+					      	</div><!-- end of progress-complete -->
+							</td>
+							<td>
+								<div class="btn-group table-buttons" role="group" aria-label="...">
+									<a href="#" class="checkinFlyout" rel="comments"><i class="icon-waypoint"></i></a>
+									<div class="circle_button" data-toggle="dropdown" aria-expanded="false">
+										<i class="ss-dropdown"></i>
+									</div>
+									  <ul class="dropdown-menu pull-right" role="menu">
+									    <li><a href="#">Action</a></li>
+									    <li><a href="#">Another action</a></li>
+									    <li><a href="#">Something else here</a></li>
+									    <li class="divider"></li>
+									    <li><a href="#">Separated link</a></li>
+									  </ul>
+								</div><!-- end of button group -->
+							</td>
+					    </tr>
+					    <tr>
+					      <td><div class="profile-xtsmall"></div> Person's Name</td>
+					      <td>Goal Name</td>
+					      <td>2 days ago</td>
+					      <td>1/01/15</td>
+					      <td>
+					      	<div class="progress-complete">
+						      	<div class="pull-right progress-bar-text">
+						      		16%
+						      	</div>
+						      	<div class="progress">
+								  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%">
+								    <span class="sr-only">16% Complete (warning)</span>
+								  </div>
+								  <div class="progress-bar progress-bar-expected" style="width: 46%">
+								    <span class="sr-only">46% Expected</span>
+								  </div>
+								</div><!-- end of progress bar -->
+					      	</div><!-- end of progress-complete -->
+							</td>
+							<td>
+								<div class="btn-group table-buttons" role="group" aria-label="...">
+									<a href="#" class="checkinFlyout" rel="comments"><i class="icon-waypoint"></i></a>
+									<div class="circle_button" data-toggle="dropdown" aria-expanded="false">
+										<i class="ss-dropdown"></i>
+									</div>
+									  <ul class="dropdown-menu pull-right" role="menu">
+									    <li><a href="#">Action</a></li>
+									    <li><a href="#">Another action</a></li>
+									    <li><a href="#">Something else here</a></li>
+									    <li class="divider"></li>
+									    <li><a href="#">Separated link</a></li>
+									  </ul>
+								</div><!-- end of button group -->
+							</td>
+					    </tr>
+					    <tr>
+					      <td><div class="profile-xtsmall"></div> Person's Name</td>
+					      <td>Goal Name</td>
+					      <td>2 days ago</td>
+					      <td>1/01/15</td>
+					      <td>
+					      	<div class="progress-complete">
+						      	<div class="pull-right progress-bar-text">
+						      		16%
+						      	</div>
+						      	<div class="progress">
+								  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%">
+								    <span class="sr-only">16% Complete (warning)</span>
+								  </div>
+								  <div class="progress-bar progress-bar-expected" style="width: 46%">
+								    <span class="sr-only">46% Expected</span>
+								  </div>
+								</div><!-- end of progress bar -->
+					      	</div><!-- end of progress-complete -->
+							</td>
+							<td>
+								<div class="btn-group table-buttons" role="group" aria-label="...">
+									<a href="#" class="checkinFlyout" rel="comments"><i class="icon-waypoint"></i></a>
+									<div class="circle_button" data-toggle="dropdown" aria-expanded="false">
+										<i class="ss-dropdown"></i>
+									</div>
+									  <ul class="dropdown-menu pull-right" role="menu">
+									    <li><a href="#">Action</a></li>
+									    <li><a href="#">Another action</a></li>
+									    <li><a href="#">Something else here</a></li>
+									    <li class="divider"></li>
+									    <li><a href="#">Separated link</a></li>
+									  </ul>
+								</div><!-- end of button group -->
+							</td>
+					    </tr>
+					  </tbody>
+					</table>
+					</div><!-- end of table-responsive -->
+				</div>
+			</div><!-- end of row -->
+			<div class="row">
+				<br>
+				<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="table-responsive"&gt;
+  &lt;table class="table table-hover"&gt;...&lt;/table&gt;
+&lt;/div&gt;
+</pre>
+				</div><!-- end of col 15 -->
+			</div><!-- end of row -->
+			<div class="row">
+				<div class="col-md-6 col-sm-7">
+					<h1>List Groups</h1>
+					<h3>Basic List Group</h3>
+					<p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content. The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed.
+					</p>
+				</div><!-- end of col 7 -->
+			</div><!-- end of row -->
+			<div class="row">
+				<br>
+				<div class="col-md-6 col-sm-7">
+					<ul class="list-group">
+					  <li class="list-group-item">Cras justo odio</li>
+					  <li class="list-group-item">Dapibus ac facilisis in</li>
+					  <li class="list-group-item">Morbi leo risus</li>
+					  <li class="list-group-item">Porta ac consectetur ac</li>
+					  <li class="list-group-item">Vestibulum at eros</li>
+					</ul>
+				</div><!-- end of col 5 -->
+			</div><!-- end of row -->
+			<div class="row">
+				<br>
+				<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+  &lt;li class="list-group-item"&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+				</div><!-- end of col 15 -->
+			</div><!-- end of row -->
+			
+			<div class="row">
+				<div class="col-md-6 col-sm-7">
+					<h1>List Groups</h1>
+					<h3>Linked & Disabled items</h3>
+					<p>Linkify list group items by using anchor tags instead of list items (that also means a parent <code>&lt;div&gt;</code> instead of an <code>&lt;ul&gt;</code>). No need for individual parents around each element. Add <code>.disabled</code> to a <code>.list-group-item</code> to gray it out to appear disabled.
+					</p>
+				</div><!-- end of col 7 -->
+			</div><!-- end of row -->
+			<div class="row">
+				<br>
+				<div class="col-md-6 col-sm-7">
+					<div class="list-group">
+					  <a href="#" class="list-group-item active">
+					    Cras justo odio
+					  </a>
+					  <a href="#" class="list-group-item disabled">Dapibus ac facilisis in</a>
+					  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+					  <a href="#" class="list-group-item">Morbi leo risus</a>
+					  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+					  <a href="#" class="list-group-item">Vestibulum at eros</a>
+					</div>
+				</div><!-- end of col 5 -->
+			</div><!-- end of row -->
+			<div class="row">
+				<br>
+				<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item active"&gt;active&lt;/a&gt;
+  &lt;a href="#" class="list-group-item disabled"&gt;disabled&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+  &lt;a href="#" class="list-group-item"&gt;...&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+				</div><!-- end of col 15 -->
+			</div><!-- end of row -->
+			
+		</div><!--/.col-xs-12.col-sm-9-->
+		</div><!--/row-->
+		<footer>
+			<div class="btn-group btn-group-justified">
+			  <div class="btn-group">
+			    <a href="feed_items.html"><button type="button" class="btn btn-default">&lt; Feed Items</button></a>
+			  </div>
+			  <div class="btn-group">
+			    <a href="index.html"><button type="button" class="btn btn-default">Styleguide &gt;</button></a>
+			  </div>
+			</div>
+		</footer>
+	</div><!--/.container-->
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/offcanvas.js"></script>
+	<script type="text/javascript" src="js/prettify.js"></script>
+	
+	<script>
+		$( "a.checkinFlyout" ).click(function( event ) {
+		  event.preventDefault();
+		});
+		$("[rel=comments]").popover({
+		    trigger : 'click',  
+		    placement : 'left', 
+		    title: 'Comment',
+		    html: 'true', 
+		    content : '<textarea class="popover-textarea form-control" placeholder="Got an update? Post it now!"></textarea>'+
+		    '<h5 class="popover-subtitle">Your Remaining Milestones</h5>'+
+		    '<div class="form-group">'+
+		    '<div class="checkbox">'+
+		    '<input id="test1" type="checkbox">'+
+		    '<label for="test1">Checkbox 1</label>'+
+		    '</div>'+
+		    '<div class="checkbox">'+
+		    '<input id="test2" type="checkbox">'+
+		    '<label for="test2">Checkbox 2</label>'+
+		    '</div>'+
+		    '<div class="checkbox">'+
+		    '<input id="test3" type="checkbox">'+
+		    '<label for="test3">Checkbox 3</label>'+
+		    '</div>'+
+		    '</div>',
+		    template: '<div class="popover"><div class="arrow"></div>'+
+		              '<h5 class="popover-title"></h5><div class="popover-content">'+
+		              '</div><div class="popover-footer"><button type="button" class="btn btn-primary btn-block popover-submit">Check In</button>'
+		            
+		})
+		.on('shown', function() {
+		    //hide any visible comment-popover
+		    $("[rel=comments]").not(this).popover('hide');
+		    var $this = $(this);
+		    //attach link text
+		    $('.popover-textarea').val($this.text()).focus();
+		    //close on cancel
+		    $('.popover-cancel').click(function() {
+		        $this.popover('hide');
+		    });
+		    //update link text on submit
+		    $('.popover-submit').click(function() {
+		        $this.text($('.popover-textarea').val());
+		        $this.popover('hide');
+		    });
+		});
+	</script>
+	
+	</body>
+</html>

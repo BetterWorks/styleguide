@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="../../favicon.ico" rel="icon">
+
+    <title>BetterWorks Styleguide - Grid</title><!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body onload="prettyPrint()">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+-->
+                <button class="navbar-toggle side" data-toggle="offcanvas"
+                style="float: left; margin-left: 10px;" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class=
+                "icon-bar"><span class=
+                "glyphicon glyphicon-arrow-right sidebar-arrow"></span></span>
+                <span class="icon-bar"></span></button> <a class="navbar-brand"
+                href="#"><img src="img/logo-small-inverse.png" alt="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav"></ul>
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                <div class="list-group sidebar">
+                    <a class="list-group-item" href="index.html">Styleguide</a>
+                    <a class="list-group-item active" href="#">Grid</a>
+                    <a class="list-group-item" href=
+                    "typography.html">Typography</a> <a class="list-group-item"
+                    href="button_progress_bars.html">Buttons & Progress
+                    Bars</a> <a class="list-group-item" href=
+                    "forms.html">Forms</a> <a class="list-group-item" href=
+                    "colors.html">Colors</a> <a class="list-group-item" href=
+                    "dashboard_modules.html">Dashboard Modules</a> <a class=
+                    "list-group-item" href="feed_items.html">Feed Items</a>
+                    <a class="list-group-item" href="lists.html">Tables & Lists</a>
+                </div>
+            </div><!--/.sidebar-offcanvas-->
+
+            <div class="col-sm-12 col-sm-offset-3 main">
+                <div class="row">
+                    <div class="col-md-8 col-sm-9">
+                        <h1 class="styleguide"><a href=
+                        "index.html"><small>Styleguide</small></a></h1>
+
+                        <h1 class="styleguideTitle">Grid System</h1>
+
+                        <p class="phead">The 960 Grid System is an effort to
+                        streamline web development workflow by providing
+                        commonly used dimensions, based on a width of 960
+                        pixels.</p><br>
+                    </div><!-- end of col-sm-8 -->
+                </div><!-- end of row -->
+                
+                <div class="row">
+                	<div class="col-md-6 col-sm-7">
+                		<h1>BetterWorks Grid</h1>
+                		<p>
+                		BetterWorks uses the 15 column variant, divided into
+                        portions that are 44 pixels wide. Each column has 10
+                        pixels of margin on the left and right, which create 20
+                        pixel wide gutters between columns.
+                		</p>
+                		<br>
+                	</div>
+                </div>
+
+                <div class="row grid_row_numbers">
+                    <div class="col-sm-1 column-one-indicator">
+                        1
+                    </div>
+
+                    <div class="col-sm-1 column-two-indicator">
+                        2
+                    </div>
+
+                    <div class="col-sm-1 column-three-indicator">
+                        3
+                    </div>
+
+                    <div class="col-sm-1 column-four-indicator">
+                        4
+                    </div>
+
+                    <div class="col-sm-1 column-five-indicator">
+                        5
+                    </div>
+
+                    <div class="col-sm-1 column-six-indicator">
+                        6
+                    </div>
+
+                    <div class="col-sm-1 column-seven-indicator">
+                        7
+                    </div>
+
+                    <div class="col-sm-1 column-eight-indicator">
+                        8
+                    </div>
+
+                    <div class="col-sm-1 column-nine-indicator">
+                        9
+                    </div>
+
+                    <div class="col-sm-1 column-ten-indicator">
+                        10
+                    </div>
+
+                    <div class="col-sm-1 column-eleven-indicator">
+                        11
+                    </div>
+
+                    <div class="col-sm-1 column-twelve-indicator">
+                        12
+                    </div>
+
+                    <div class="col-sm-1 column-thirteen-indicator">
+                        13
+                    </div>
+
+                    <div class="col-sm-1 column-fourteen-indicator">
+                        14
+                    </div>
+
+                    <div class="col-sm-1 column-fifteen-indicator">
+                        15
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="grid fifteen col-sm-15"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid one col-sm-1"></div>
+
+                    <div class="grid fourteen col-sm-14"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid two col-sm-2"></div>
+
+                    <div class="grid thirteen col-sm-13"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid three col-sm-3"></div>
+
+                    <div class="grid twelve col-sm-12"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid four col-sm-4"></div>
+
+                    <div class="grid eleven col-sm-11"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid five col-sm-5"></div>
+
+                    <div class="grid ten col-sm-10"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid six col-sm-6"></div>
+
+                    <div class="grid nine col-sm-9"></div>
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="grid seven col-sm-7"></div>
+
+                    <div class="grid eight col-sm-8"></div>
+                </div><!-- end of row -->
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-15"&gt;<span class="columns-15"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-1"&gt;<span class="columns-1"></span>&lt;/div&gt;
+  &lt;div class="col-sm-14"&gt;<span class="columns-14"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-2"&gt;<span class="columns-2"></span>&lt;/div&gt;
+  &lt;div class="col-sm-13"&gt;<span class="columns-13"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-3"&gt;<span class="columns-3"></span>&lt;/div&gt;
+  &lt;div class="col-sm-12"&gt;<span class="columns-12"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;   
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-4"&gt;<span class="columns-4"></span>&lt;/div&gt;
+  &lt;div class="col-sm-11"&gt;<span class="columns-11"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-5"&gt;<span class="columns-5"></span>&lt;/div&gt;
+  &lt;div class="col-sm-10"&gt;<span class="columns-10"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-6"&gt;<span class="columns-6"></span>&lt;/div&gt;
+  &lt;div class="col-sm-9"&gt;<span class="columns-9"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-7"&gt;<span class="columns-7"></span>&lt;/div&gt;
+  &lt;div class="col-sm-8"&gt;<span class="columns-8"></span>&lt;/div&gt;
+&lt;/div&gt;&lt;!-- end of row --&gt;
+</pre>
+                    </div><!-- end of col-sm-14 -->
+                </div><!-- end of row -->
+            </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->
+
+        <footer>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <a href="index.html"><button class="btn btn-default left"
+                    type="button">&lt; Styleguide</button></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="typography.html"><button class=
+                    "btn btn-default right" type="button">Typography
+                    &gt;</button></a>
+                </div>
+            </div>
+        </footer>
+    </div><!--/.container-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="js/bootstrap.min.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> <script src="js/offcanvas.js"></script> <script src="js/grid-indicator.js"></script>
+     <script src="js/prettify.js" type="text/javascript"></script>
+</body>
+</html>

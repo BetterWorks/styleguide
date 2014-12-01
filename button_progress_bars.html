@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="../../favicon.ico" rel="icon">
+
+    <title>BetterWorks Styleguide - Buttons & Progress Bars</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="fonts/ss-standard.css" rel="stylesheet">
+</head>
+
+<body onload="prettyPrint()">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+-->
+                <button class="navbar-toggle side" data-toggle="offcanvas"
+                style="float: left; margin-left: 10px;" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class=
+                "icon-bar"><span class=
+                "glyphicon glyphicon-arrow-right sidebar-arrow"></span></span>
+                <span class="icon-bar"></span></button> <a class="navbar-brand"
+                href="#"><img src="img/logo-small-inverse.png" alt="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav"></ul>
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                <div class="list-group sidebar">
+                    <a class="list-group-item" href="index.html">Styleguide</a>
+                    <a class="list-group-item" href="grid.html">Grid</a>
+                    <a class="list-group-item" href=
+                    "typography.html">Typography</a> <a class=
+                    "list-group-item active" href="#">Buttons & Progress
+                    Bars</a> <a class="list-group-item" href=
+                    "forms.html">Forms</a> <a class="list-group-item" href=
+                    "colors.html">Colors</a> <a class="list-group-item" href=
+                    "dashboard_modules.html">Dashboard Modules</a> <a class=
+                    "list-group-item" href="feed_items.html">Feed Items</a>
+                    <a class="list-group-item" href="lists.html">Tables & Lists</a>
+                </div>
+            </div><!--/.sidebar-offcanvas-->
+
+            <div class="col-sm-12 col-sm-offset-3 main">
+                <div class="row">
+                    <div class="col-md-8 col-sm-9">
+                        <h1 class="styleguide"><a href=
+                        "index.html"><small>Styleguide</small></a></h1>
+
+                        <h1 class="styleguideTitle">Buttons & Progress
+                        Bars</h1>
+
+                        <p class="phead">Use any of the available button classes to quickly create a styled button. Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p><br>
+                    </div><!-- end of col-sm-8 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Primary Buttons</h1>
+                    </div><!-- end of col 15 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <p>Primary buttons are used for the highest ranking actions on a page. They emphasize they key actions a user would take when navigating a certain page.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-15">
+                        <br>
+
+                        <p><button class="btn btn-primary" type="button">Create
+                        Goal</button> <button class="btn btn-primary" type=
+                        "button"><i class="icon-cheer"></i> Cheer</button>
+                        <button class="btn btn-primary" type="button"><i class=
+                        "icon-nudge"></i> Nudge</button> <button class=
+                        "btn btn-primary" disabled="disabled" type=
+                        "button">Create Goal (Inactive)</button></p><br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;button type="button" class="btn btn-primary"&gt;&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary" disabled="disabled"&gt;&lt;/button&gt;
+
+&lt;style&gt;
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5em;
+  border-radius: 2px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+/* Active */
+.btn-primary {
+  background-color: #5bc0de;
+  border: 1px solid #5bc0de;
+  color: rgba(255,255,255,0.90);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #50A9C3;
+  border: 1px solid #50A9C3;
+  color: #fff;
+}
+/* Inactive */
+.btn-primary[disabled] {
+  background-color: #8CD3E8;
+  border: 1px solid #8CD3E8;
+  color: rgba(255,255,255,0.90);
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Success Buttons</h1>
+                    </div><!-- end of col 15 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <p>Success buttons are used in multi-step forms (i.e. goal creation). They indicate a finish line. They should be the last button a user clicks in a multi-step process.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-15">
+                        <br>
+
+                        <p><button class="btn btn-success" type=
+                        "button">Success</button> <button class=
+                        "btn btn-success" disabled="disabled" type=
+                        "button">Success (Inactive)</button></p><br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;button type="button" class="btn btn-success"&gt;&lt;/button&gt;
+&lt;button type="button" class="btn btn-success" disabled="disabled"&gt;&lt;/button&gt;
+
+&lt;style&gt;
+/* Active */
+.btn-success {
+  border: 1px solid #82BB41;
+  background-color: #82BB41;
+  color: rgba(255,255,255,0.90);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  border: 1px solid #70A438;
+  background-color: #70A438;
+  color: #fff;
+}
+/* Inactive */
+.btn-success[disabled] {
+  background-color: #A8CF79;
+  border: 1px solid #A8CF79;
+  color: rgba(255,255,255,0.70);
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Alternative Primary Buttons</h1>
+                    </div><!-- end of col 15 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <p>Alternative primary buttons are used when primary
+                        buttons cannot. This would occur when a button needs to
+                        be placed on an already highly saturated, colorful
+                        background. Both primary and secondary buttons are
+                        styled the same on saturated backgrounds.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-15">
+                        <br>
+
+                        <div class="well blue-well">
+                            <button class="btn btn-primary-alt" type=
+                            "button">Create Goal</button> <button class=
+                            "btn btn-primary-alt" disabled="disabled" type=
+                            "button">Create Goal (Inactive)</button>
+                        </div><br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;button type="button" class="btn btn-primary"&gt;&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary" disabled="disabled"&gt;&lt;/button&gt;
+
+&lt;style&gt;
+/* Active */
+.btn-primary-alt {
+  border: 1px solid #fff;
+  background-color: rgba(255,255,255,0);
+  color: rgba(255,255,255,0.90);
+}
+.btn-primary-alt:hover,
+.btn-primary-alt:focus,
+.btn-primary-alt:active {
+  background-color: #fff;
+  color: #5bc0de; /* Parent background color */
+}
+/* Inactive */
+.btn-primary-alt[disabled] {
+  background-color: rgba(255,255,255,0);
+  border: 1px solid rgba(255,255,255,0.70);
+  color: rgba(255,255,255,0.70);
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Secondary Buttons</h1>
+                    </div><!-- end of col 15 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <p>Secondary buttons are used for secondary actions.
+                        When paired with a primary button, the secondary button
+                        will always be on the left.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-15">
+                        <br>
+
+                        <p>
+
+                        <div class="btn-group">
+                            <button class="btn btn-secondary dropdown-toggle"
+                            data-toggle="dropdown" type="button">Dropdown
+                            <span class="caret"></span></button>
+
+                             <ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+							</div>
+							<button type="button" class="btn btn-secondary">
+							<span class="ss-write">
+							</span> Edit</button>
+                        </p>
+                        <br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;!-- Dropdown Secondary Button --&gt;
+&lt;div type="button" class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"&gt;
+    Dropdown &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" role="menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Another Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Separated Link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Secondary Button w/ icon --&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;
+  &lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt; Edit
+&lt;/button&gt; 
+
+&lt;style&gt;
+.btn-secondary {
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  color: #333;
+}
+
+.btn-secondary:hover, 
+.btn-secondary:focus,
+.btn-secondary.active {
+  background-color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  color: #333;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background-clip: padding-box;
+}
+&lt;/style&gt;
+</pre>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <h1>Progress Bars</h1>
+                    </div><!-- end of col 15 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-7">
+                        <p>Progress bars is used for displaying the progress of
+                        goals. When a goal is on track, the progress bar is
+                        green. When a goal is 25% behind schedule, the progress
+                        bar is yellow. When a goal is 50% behind schedule, the
+                        progress bar is red.</p>
+                    </div>
+
+                    <div class="col-md-8 col-sm-7">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success"
+                            data-placement="top" data-toggle="tooltip" style=
+                            "width: 10%" title=
+                            "This goal is green because it is on track.">
+                                <span class="sr-only">10% Complete
+                                (completed)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-expected"
+                            style="width: 10%">
+                                <span class="sr-only">10% Complete
+                                (expected)</span>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning"
+                            data-placement="top" data-toggle="tooltip" style=
+                            "width: 10%" title=
+                            "This goal is yellow because it is more than 25% behind schedule.">
+                            <span class="sr-only">10% Complete
+                            (completed)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-expected"
+                            style="width: 40%">
+                                <span class="sr-only">40% Complete
+                                (expected)</span>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-danger"
+                            data-placement="top" data-toggle="tooltip" style=
+                            "width: 10%" title=
+                            "This goal is red because it is more than 50% behind schedule.">
+                            <span class="sr-only">10% Complete
+                            (completed)</span>
+                            </div>
+
+                            <div class="progress-bar progress-bar-expected"
+                            style="width: 90%">
+                                <span class="sr-only">90% Complete
+                                (expected)</span>
+                            </div>
+                        </div>
+                    </div><!-- end of div col 15 -->
+                </div><!-- end of row -->
+
+                
+            </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->
+
+        <footer>
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <a href="typography.html"><button class="btn btn-default"
+                    type="button">&lt; Typography</button></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="forms.html"><button class="btn btn-default" type=
+                    "button">Forms &gt;</button></a>
+                </div>
+            </div>
+        </footer>
+    </div><!--/.container-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="js/bootstrap.min.js"></script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> <script src="js/offcanvas.js"></script> <script>
+    $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script src="js/prettify.js" type="text/javascript"></script>
+</body>
+</html>
