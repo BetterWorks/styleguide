@@ -1,0 +1,289 @@
+<div class="col-sm-15 main">
+                <div class="row">
+                    <div class="col-md-8 col-sm-9">
+                        <h1 class="styleguideTitle">Buttons & Progress Bars</h1>
+
+                        <p class="phead">
+                        Use any of the available button classes to quickly create a styled button. Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.
+                        </p>
+                        <br>
+                        <br>
+                    </div><!-- end of col-sm-8 -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                	<div class="col-sm-15">
+                		<h1>Primary Buttons</h1>
+                	</div>
+                    <div class="col-sm-5">
+                        <p>
+                        Primary buttons are used for the highest ranking actions on a page. They emphasize they key actions a user would take when navigating a certain page.
+                        </p>
+                    </div><!-- end of div col 7 -->
+
+                    <div class="col-sm-9 col-md-offset-1">
+                    	<h3>Small</h3>
+                        <p>
+	                        <button class="btn btn-primary btn-sm" type="button">
+	                        	<i class="icon-cheer"></i> Cheer
+	                        </button>
+	                        <button class="btn btn-primary btn-sm" type="button">
+	                        	<i class="icon-nudge"></i> Nudge
+	                        </button> 
+	                        <button class="btn btn-primary btn-sm" disabled="disabled" type="button">
+	                        	Primary Disabled
+	                        </button>
+                        </p>
+                    	<h3>Normal</h3>
+                        <p>
+	                        <button class="btn btn-primary" type="button">
+	                        	<i class="icon-cheer"></i> Cheer
+	                        </button>
+	                        <button class="btn btn-primary" type="button">
+	                        	<i class="icon-nudge"></i> Nudge
+	                        </button> 
+	                        <button class="btn btn-primary" disabled="disabled" type="button">
+	                        	Primary Disabled
+	                        </button>
+                        </p>
+                        <h3>Large</h3>
+                        <p>
+	                        <button data-toggle="tooltip" data-placement="left" title="Tooltip on left" class="btn btn-primary btn-lg" type="button">
+	                        	<i class="icon-cheer"></i> Cheer
+	                        </button>
+	                        <button class="btn btn-primary btn-lg" type="button">
+	                        	<i class="icon-nudge"></i> Nudge
+	                        </button> 
+	                        <button class="btn btn-primary btn-lg" disabled="disabled" type="button">
+	                        	Primary Disabled
+	                        </button>
+                        </p>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+                <div class="row">
+                	<div class="col-sm-15">
+                	<br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;button type="button" class="btn btn-primary"&gt;&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary" disabled="disabled"&gt;&lt;/button&gt;
+</pre>
+                	</div>
+                	<br>
+                </div><!-- end of row -->
+                
+
+                <div class="row">
+                	<div class="col-sm-15">
+                		<h1>Success Buttons</h1>
+                	</div>
+                    <div class="col-sm-5">
+                        <p>Success buttons are used in multi-step forms (i.e. goal creation). They indicate a finish line. They should be the last button a user clicks in a multi-step process.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-9 col-md-offset-1">
+                    	<h3>Small</h3>
+                        <p>
+	                        <button class="btn btn-success btn-sm" type="button">
+	                        	Success
+	                        </button>
+	                        <button class="btn btn-success btn-sm" disabled="disabled" type="button">
+	                        	Success Disabled
+	                        </button>
+                        </p>
+                        <h3>Normal</h3>
+                        <p>
+	                        <button class="btn btn-success" type="button">
+	                        	Success
+	                        </button>
+	                        <button class="btn btn-success" disabled="disabled" type="button">
+	                        	Success Disabled
+	                        </button>
+                        </p>
+                        <h3>Large</h3>
+                        <p>
+	                        <button class="btn btn-success btn-lg" type="button">
+	                        	Success
+	                        </button>
+	                        <button class="btn btn-success btn-lg" disabled="disabled" type="button">
+	                        	Success Disabled
+	                        </button>
+                        </p>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+                <div class="row">
+                	<div class="col-sm-15">
+                		<br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;button type="button" class="btn btn-success"&gt;&lt;/button&gt;
+&lt;button type="button" class="btn btn-success" disabled="disabled"&gt;&lt;/button&gt;
+</pre>
+                	</div>
+                	<br>
+                </div><!-- end of row -->
+
+                <div class="row">
+                	<div class="col-sm-15">
+                		<h1>Alternative Primary Buttons</h1>
+                	</div>
+                    <div class="col-sm-5">
+                        <p>Alternative primary buttons are used when primary
+                        buttons cannot. This would occur when a button needs to
+                        be placed on an already highly saturated, colorful
+                        background. Both primary and secondary buttons are
+                        styled the same on saturated backgrounds.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-9 col-md-offset-1">
+                        <div class="well blue-well">
+                        	<h3 style="color: #fff;">Small</h3>
+	                        <p>
+	                            <button class="btn btn-primary-alt btn-sm" type="button">
+	                            	Create Goal
+	                            </button> 
+	                            <button class="btn btn-primary-alt btn-sm" disabled="disabled" type="button">
+	                            	Primary-alt Disabled
+	                            </button>
+	                        </p>
+							<h3 style="color: #fff;">Normal</h3>
+	                        <p>
+	                            <button class="btn btn-primary-alt" type="button">
+	                            	Create Goal
+	                            </button> 
+	                            <button class="btn btn-primary-alt" disabled="disabled" type="button">
+	                            	Primary-alt Disabled
+	                            </button>
+	                        </p>
+	                        <h3 style="color: #fff;">Large</h3>
+	                        <p>
+	                            <button class="btn btn-primary-alt btn-lg" type="button">
+	                            	Create Goal
+	                            </button> 
+	                            <button class="btn btn-primary-alt btn-lg" disabled="disabled" type="button">
+	                            	Primary-alt Disabled
+	                            </button>
+	                        </p>
+                        </div>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+				<div class="row">
+                	<div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+&lt;button type="button" class="btn btn-primary-alt"&gt;&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary-alt" disabled="disabled"&gt;&lt;/button&gt;
+</pre>
+                	</div>
+                	<br>
+                </div><!-- end of row -->
+ 
+
+                <div class="row">
+                	<div class="col-sm-15">
+                		<h1>Secondary Buttons</h1>
+                	</div>
+                    <div class="col-sm-5">
+                        <p>Secondary buttons are used for secondary actions.
+                        When paired with a primary button, the secondary button
+                        will always be on the left.</p>
+                    </div><!-- end of div col 15 -->
+
+                    <div class="col-sm-9 col-md-offset-1">
+                        <h3>Small</h3>
+                        <p>
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle"
+                            data-toggle="dropdown" type="button">Dropdown
+                            <span class="caret"></span></button>
+                             <ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+							</div>
+							<button type="button" class="btn btn-default btn-sm">
+								<span class="ss-write"></span> Edit
+							</button>
+							<button type="button" class="btn btn-sm btn-default" disabled="disabled">
+								Secondary Disabled
+							</button>
+                        </p>
+						<h3>Normal</h3>
+                        <p>
+
+                        <div class="btn-group">
+                            <button class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown" type="button">Dropdown
+                            <span class="caret"></span></button>
+
+                             <ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+							</div>
+							<button type="button" class="btn btn-default">
+								<span class="ss-write"></span> Edit
+							</button>
+							<button type="button" class="btn btn-default" disabled="disabled">
+								Secondary Disabled
+							</button>
+                        </p>
+                        <h3>Large</h3>
+                        <p>
+
+                        <div class="btn-group">
+                            <button class="btn btn-lg btn-default dropdown-toggle"
+                            data-toggle="dropdown" type="button">Dropdown
+                            <span class="caret"></span></button>
+
+                             <ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+							  </ul>
+							</div>
+							<button type="button" class="btn btn-lg btn-default">
+								<span class="ss-write"></span> Edit
+							</button>
+							<button type="button" class="btn btn-lg btn-default" disabled="disabled">
+								Secondary Disabled
+							</button>
+                        </p>
+                    </div><!-- end of div col 6 -->
+                </div><!-- end of row -->
+                <div class="row">
+                	<div class="col-sm-15">
+                		<br>
+                        <pre class="prettyprint lang-html linenums">
+&lt;!-- Dropdown Secondary Button --&gt;
+&lt;div type="button" class="btn-group"&gt;
+  &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"&gt;
+    Dropdown &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" role="menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Another Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;class="divider"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Separated Link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Secondary Button w/ icon --&gt;
+&lt;button type="button" class="btn btn-default"&gt;
+  &lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt; Edit
+&lt;/button&gt; 
+</pre>
+                	</div>
+                	<br>
+                </div><!-- end of row -->
+
+               
+
+                
+            </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->

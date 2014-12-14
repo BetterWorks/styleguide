@@ -1,0 +1,615 @@
+<div class="col-sm-15 main">
+	<div class="row">
+		<div class="col-md-8 col-sm-9">                        
+            <h1 class="styleguideTitle">Dashboard Modules</h1>
+            <p class="phead">
+            Dashboard Modules are the heart and soul of the BetterWorks app. 
+            They give users an overview of all the import information they're 
+            looking for, compacted for easy readability and digestion.
+            </p>
+            <br>
+            <br>
+        </div><!-- end of col-sm-8 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>My Summary</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The My Summary module is the users BetterWorks business card. 
+			This module displays the users profile image, name, title, current 
+			goals, checkins, cheers received, and any badges they've earned.
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <div class="media">
+				  <a class="media-left" href="#">
+				    <img class="img-larger img-circle media-object pull-left" src="images/125_medium.png" alt="profile picture">
+				  </a>
+				  <div class="media-body mediaBodyModule">
+				    <a href="" class="mySummaryHeader">
+					    <div class="push-bottom-half">
+						    Jacobim Mugatu
+						    <span class="badges">
+						    	<img src="images/vip_graphic.svg" alt="VIP badge" data-toggle="tooltip" data-placement="top" title="Very Influential Professional">
+						    </span>
+					    </div>
+				    </a>
+				    <div class="ghost mySummarySubhead push-bottom-half">
+					    Fashion Mogul
+				    </div>
+				    <div class="row">
+					    <div class="col-xs-5">
+						    <i class="icon-goal vertical-middle" data-toggle="tooltip" data-placement="top" title="Current Goals"></i> <span class="ghost">5</span>
+					    </div><!-- end of col-xs-5 -->
+					    <div class="col-xs-5">
+						    <i class="icon-waypoint vertical-middle" data-toggle="tooltip" data-placement="top" title="Check Ins"></i> <span class="ghost">86</span>
+					    </div><!-- end of col-xs-5 -->
+					    <div class="col-xs-5">
+						    <i class="icon-cheer vertical-middle" data-toggle="tooltip" data-placement="top" title="Cheers Received"></i> <span class="ghost">25</span>
+					    </div><!-- end of col-xs-5 -->
+				    </div><!-- end of row -->
+				  </div><!-- end of media body -->
+				</div><!-- end of media -->
+			  </div><!-- end of panel body -->
+			</div><!-- end of panel -->
+		</div><!-- end of col offset 2 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="panel panel-default"&gt;
+...
+&lt;/div&gt;
+</pre>
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>Goal Stats</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The Goal Stats widget is a breakdown of the users overall goal progress. 
+			The large dial on top displays their overall and expected goal progress. 
+			Below the dial is a list of all the users' goals in progress. Each item 
+			in the list includes the goal name, progress pie, progress percent, and 
+			last update. Progress does not include private goals.
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="panel panel-default widget-box-large widget-box" ng-init="goals = [
+{
+name:'Example Goal 1', 
+detail:'Updated 14 days ago', 
+percentage:'78%'
+},
+{
+name:'Example Goal 2', 
+detail:'Updated 2 days ago', 
+percentage:'62%'
+},
+{
+name:'Example Goal 3', 
+detail:'Updated 2 days ago', 
+percentage:'39%'
+},
+{
+name:'Example Goal 4', 
+detail:'Updated 14 days ago', 
+percentage:'39%'
+},
+{
+name:'Example Goal 5', 
+detail:'Updated 14 days ago', 
+percentage:'39%'
+},
+{
+name:'Example Goal 6', 
+detail:'Updated 14 days ago', 
+percentage:'39%'
+},
+{
+name:'Example Goal 7', 
+detail:'Updated 14 days ago', 
+percentage:'39%'
+},
+{
+name:'Example Goal 8', 
+detail:'Updated 14 days ago', 
+percentage:'39%'
+},
+{
+name:'Example Goal 9', 
+detail:'Updated 14 days ago', 
+percentage:'39%'
+},					
+{
+name:'Example Goal 10', 
+detail:'Updated 14 days ago', 
+percentage:'25%'
+}
+				]">
+				<div class="goalstats-header">
+					<div class="goal-stats-progress progress-meter" style="font-size: 178px; height: 178px;">
+						<div class="meter-text">
+							<div class="meter-progress">
+								<div class="meter-value">
+									<span>49</span>
+									<span class="meter-percentage">%</span>
+								</div><!-- end of meter value -->
+								<div class="meter-label">
+									Overall <br> Progress
+								</div><!-- end of meter-label -->
+							</div><!-- end of meter-progress -->
+							<div class="meter-expected">
+								<div class="meter-value">
+							      <span>68</span>
+							      <span class="meter-percentage">%</span>
+							    </div><!-- end of meter-value -->
+							    <div class="meter-label">
+									Expected<br>Progress
+								</div>
+							</div><!-- end of meter-expected -->
+						</div><!-- end of meter-text -->
+						<svg width="178" height="178" id="goal-stats-svg"><path d="M-40.049999999999976,69.36863484313356A80.10000000000001,80.10000000000001 0 1,1 40.05,69.36863484313355L31.14999999999999,53.95338265577053A62.3,62.3 0 1,0 -31.149999999999974,53.95338265577053Z" transform="translate(89, 89)" fill="#F6F7F8" class="progress-meter-main"></path><linearGradient x1="0" y1="0" x2="0" y2="100%" id="shadowGradient" spread-method="pad"><stop offset="70%" stop-color="#F6F7F8" stop-opacity="1"></stop><stop offset="100%" stop-color="#F6F7F8" stop-opacity="0"></stop></linearGradient><path d="M-31.149999999999974,53.95338265577053A62.3,62.3 0 1,1 31.14999999999999,53.95338265577053L26.699999999999992,46.24575656208903A53.4,53.4 0 1,0 -26.699999999999978,46.245756562089035Z" transform="translate(89, 89)" fill="url(#shadowGradient)" class="progress-meter-shadow"></path><circle r="53.4" cx="89" cy="89" fill="transparent" cursor="pointer"></circle><path d="M-41.82999999999996,72.45168528060614A83.66,83.66 0 1,1 69.5641326077119,-46.47393952030184L51.80307747382801,-34.608252834267326A62.3,62.3 0 1,0 -31.149999999999974,53.95338265577053Z" transform="translate(89, 89)" fill="#CCCBCB" class="progress-meter-expected"></path><path pointer-events="all" class="progress-meter-expected" d="M-42.27499999999996,73.2224478899743A84.55,84.55 0 1,1 69.77201569520764,-47.75529631179874L55.083170285690244,-37.70154971984111A66.75,66.75 0 1,0 -33.37499999999997,57.80719570261129Z" transform="translate(89, 89)" fill="#E2E4E6"></path><path d="M-44.499999999999964,77.07626093681506A89,89 0 0,1 -5.50265844422227,-88.82972897654382L-3.8518609109555886,-62.180810283580676A62.3,62.3 0 0,0 -31.149999999999974,53.95338265577053Z" transform="translate(89, 89)" fill="#89C544"></path><path d="M-44.499999999999964,77.07626093681506A89,89 0 0,1 -6.500376943386348,-88.76229548402796L-5.200301554709079,-71.00983638722238A71.2,71.2 0 0,0 -35.59999999999997,61.661008749452044Z" transform="translate(89, 89)" fill="#9ACB51"></path></svg>
+					</div><!-- end of goal-stats-progress -->
+				</div><!-- end of goalstats-header -->
+				<div class="goalstats-list">
+					<div class="goalstats-goal" ng-repeat="goal in goals">
+						<a href="#">
+							<div class="goalstats-name">
+								<p class="goal-item-description">
+									{{goal.name}}
+								</p>
+								<span class="goal-item-detail">
+									{{goal.detail}}
+								</span>
+							</div><!-- end of goalstats-name -->
+							<div class="goalstats-progress">
+								<div class="progress-icon progress-icon-large">
+									<svg width="19" height="19"><g transform="translate(9.5, 9.5)"><g class="pie-slice" stroke="#82BB41"><path d="M5.204748896376251e-16,-8.5A8.5,8.5 0 1,1 -8.37086590060377,-1.4760095101689052L0,0Z" fill="#82BB41"></path></g><g class="pie-slice" stroke="#E2E2E2"><path d="M-8.37086590060377,-1.4760095101689052A8.5,8.5 0 0,1 -8.37086590060377,-1.4760095101689052L0,0Z" fill="#E2E2E2"></path></g><g class="pie-slice" stroke="transparent"><path d="M-8.37086590060377,-1.4760095101689052A8.5,8.5 0 0,1 -1.5614246689128753e-15,-8.5L0,0Z" fill="#FFF"></path></g><circle r="8.5" cx="0" cy="0" fill="transparent" stroke="#82BB41"></circle></g></svg>
+								</div><!-- end of progress icon -->
+								<span class="goal-item-progress">{{goal.percentage}}</span>
+							</div><!-- end of goalstats progress -->
+						</a>
+					</div><!-- end of goalstats goal -->
+				</div><!-- end of goalstats-list -->
+				<div class="btn-wrapper widget-bottom-box goal-stats-bottom">
+					<a href="#" class="btn btn-primary btn-block">Create Goal</a>
+				</div><!-- end of goal stats bottom -->
+			</div><!-- end of widget-box -->
+		</div><!-- end of col offset 2 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="panel panel-default"&gt;
+...
+&lt;/div&gt;
+</pre>
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>My Team</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The My Team module gives you a snippet of your teams overall goal 
+			progress. It displays each team members profile image, name, last 
+			checkin, and overall goal progress. Progress does not include 
+			private goals.
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="panel panel-default widget-box-small table-list" ng-init="teammates = [
+{
+name:'John Nhoj', 
+picture:'images/m1.jpg', 
+lastUpdated:'Checked in 2 days ago', 
+progress:'69%'
+},
+{
+name:'Jessie Eissej', 
+picture:'images/f1.jpg', 
+lastUpdated:'Checked in 3 days ago', 
+progress:'54%'
+},
+{
+name:'Johanna Annahoj', 
+picture:'images/f2.jpg', 
+lastUpdated:'Checked in 4 days ago', 
+progress:'40%'
+},
+{
+name:'Joy Yoj', 
+picture:'images/f3.jpg', 
+lastUpdated:'Checked in 1 day ago', 
+progress:'34%'
+},
+{
+name:'Mary Yram', 
+picture:'images/f4.jpg', 
+lastUpdated:'Checked in 5 days ago', 
+progress:'33%'
+},
+{
+name:'Peter Retep', 
+picture:'images/m2.jpg', 
+lastUpdated:'Checked in 2 hours ago', 
+progress:'25%'
+},
+{
+name:'Sebastian Naitsabes', 
+picture:'images/m3.jpg', 
+lastUpdated:'Checked in 5 hours ago', 
+progress:'10%'
+},
+{
+name:'Bob Bob', 
+picture:'images/m4.jpg', 
+lastUpdated:'Checked in 1 hour ago', 
+progress:'0%'
+}
+				]">
+				<div class="listwidget-list">
+					<a href="#" class="listwidget-item" ng-repeat="teammate in teammates">
+						<div class="listwidget-image">
+							<img src="{{teammate.picture}}" class="team-member-image img-circle">
+						</div><!-- end of listwidget-image -->
+						<div class="listwidget-name">
+							<span class="team-member-name">{{teammate.name}}</span>
+							<span class="widget-detail">{{teammate.lastUpdated}}</span>
+						</div><!-- end of listwidget-name -->
+						<div class="listwidget-progress overall-progress">
+							{{teammate.progress}}
+						</div><!-- end of listwidget progress -->
+					</a><!-- end of listwidget item -->
+				</div><!-- end of listwidget-list -->
+			</div><!-- end of panel -->
+		</div><!-- end of col offset -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="panel panel-default"&gt;
+...
+&lt;/div&gt;
+</pre>
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>Hottest Goal</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The Hottest Goal module displays your teams hottest goal, 
+			based on social interactions including, cheers, views, 
+			and comments.
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="widget-box panel panel-default widget-box-small widget-hottest-goal">
+				<div class="widget-stretch">
+					<div class="hottest-goal-widget-goal">
+						<div class="widget-logo hottestgoal-logo">
+						</div><!-- end of widget-logo -->
+						<div class="widget-description">
+							<div class="media">
+								<a class="media-left" href="#">
+									<img src="images/125_medium.png" class="media-object img-circle img-small pull-left">
+								</a>
+								<div class="media-body">
+									<div class="hottest-goal-name">
+										This is the hottest goal. Its so hot right now!
+									</div><!-- end of hottest-goal-name -->
+									<span class="widget-detail">
+										Jacobim Mugatu
+									</span>
+								</div><!-- end of media body -->
+							</div><!-- end of media -->
+						</div><!-- end of widget description -->
+					</div><!-- end of hottest-goal-widget-goal -->
+					<div class="push-bottom">
+						<div class="row">
+							<div class="col-xs-5">
+						    <i class="icon-cheer icon-large  vertical-middle ghost" data-toggle="tooltip" data-placement="top" title="Cheers"></i> <span class="ghost">5</span>
+					    </div><!-- end of col-xs-5 -->
+					    <div class="col-xs-5">
+						    <i class="ss-chat icon-large  vertical-middle ghost" data-toggle="tooltip" data-placement="top" title="Comments"></i> <span class="ghost">86</span>
+					    </div><!-- end of col-xs-5 -->
+					    <div class="col-xs-5">
+						    <i class="ss-view icon-large  vertical-middle ghost" data-toggle="tooltip" data-placement="top" title="Views"></i> <span class="ghost">144</span>
+						</div><!-- end of row -->
+					</div><!-- end of push bottom -->
+				</div><!-- end of widget stretch -->
+			</div><!-- end of widget hottest goal -->
+		</div><!-- end of col offset 2 -->
+	</div><!-- end of row -->
+	</div>
+	<div class="row">
+		<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="panel panel-default"&gt;
+...
+&lt;/div&gt;
+</pre>
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>Top Company Goals</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The top company goals widget displays the companies' top goals. 
+			The list is prioritized with the most important goal on top. 
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="widget-box panel panel-default widget-box-small table-list" ng-init="topGoals = [
+{
+name:'Example Goal 1' 
+},
+{
+name:'Example Goal 2' 
+},
+{
+name:'Example Goal 3' 
+},
+{
+name:'Example Goal 4' 
+},
+{
+name:'Example Goal 5'
+}
+				]">
+				<div class="listwidget-list">
+					<a href="#" class="listwidget-item" ng-repeat="topGoal in topGoals">
+						<div class="listwidget-image">
+							<img class="team-member-image img-circle" src="images/125_medium.png">
+						</div><!-- end of listwidget-image -->
+						<div class="listwidget-name">
+							<span class="team-member-name">
+							{{topGoal.name}}
+							</span>
+							<span class="widget-detail">
+							Jacobim Mugatu
+							</span>
+						</div><!-- end of listwidget-name -->
+						<div class="listwidget-progress nowrap">
+							<div class="progress-icon progress-icon-large">
+								<svg width="19" height="19"><g transform="translate(9.5, 9.5)"><g class="pie-slice" stroke="#F4E564"><path d="M5.204748896376251e-16,-8.5A8.5,8.5 0 1,1 -1.4903389728879446,8.368326579782323L0,0Z" fill="#F4E564"></path></g><g class="pie-slice" stroke="#E2E2E2"><path d="M-1.4903389728879446,8.368326579782323A8.5,8.5 0 0,1 -8.349441631193853,-1.5927411739786643L0,0Z" fill="#E2E2E2"></path></g><g class="pie-slice" stroke="transparent"><path d="M-8.349441631193853,-1.5927411739786643A8.5,8.5 0 0,1 -1.5614246689128753e-15,-8.5L0,0Z" fill="#FFF"></path></g><circle r="8.5" cx="0" cy="0" fill="transparent" stroke="#F4E564"></circle></g></svg>
+							</div><!-- end of progress icon -->
+							<span class="goal-item-progress">
+							58%
+							</span>
+						</div><!-- end of listwidget-progress -->
+					</a><!-- end of listwidget-item -->
+				</div><!-- end of listwidget-list -->
+			</div><!-- end of table list -->
+		</div><!-- end of dashboard module -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="panel panel-default"&gt;
+...
+&lt;/div&gt;
+</pre>
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>Contributing to Top Company Goals</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The Contributing to Top Company Goals module displays the companies 
+			top goals as well as the number of child goals contributing towards 
+			each. Each slice of the pie represents a Top Company Goal. The more 
+			contributing goals a top goal has, the larger the pie slice.
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="widget-box panel panel-default widget-box-small scrollable">
+				<div class="group-contribution" ng-init="cTopGoals = [
+{
+name:'Example Top Goal 1',
+value: '44',
+color: '#6ACB9A'
+},
+{
+name:'Example Top Goal 2',
+value: '11',
+color: '#8BE1FD' 
+},
+{
+name:'Example Top Goal 3',
+value: '6',
+color: '#8169C9' 
+},
+{
+name:'Example Top Goal 4',
+value: '5',
+color: '#CA69B5'
+},
+{
+name:'Example Top Goal 5',
+value: '2',
+color: '#CA6768'	
+},
+{
+name:'Example Top Goal 6',
+value: '2',
+color: '#9A040C'	
+}	
+				]">
+					<div class="piechart">
+						<svg width="170" height="170" viewBox="0 0 200 200">
+						<g transform="translate(100, 100) rotate(226.2857142857143)">
+						<path class="arc" fill="#6ACB9A" d="M69.3883069274296,66.342014302739A96,96 0 1,1 -1.7634913907721887e-14,-96L0,0Z" title="Example Top Goal 1"></path>
+						<path class="arc" fill="#8BE1FD" d="M93.59307956945507,-21.362009659806183A96,96 0 0,1 69.3883069274296,66.342014302739L0,0Z" title="Example Top Goal 2"></path>
+						<path class="arc" fill="#8169C9" d="M69.3883069274296,-66.342014302739A96,96 0 0,1 93.59307956945507,-21.362009659806183L0,0Z" title="Example Top Goal 3"></path>
+						<path class="arc" fill="#CA69B5" d="M33.7319831118089,-89.87854758141478A96,96 0 0,1 69.3883069274296,-66.342014302739L0,0Z" title="Example Top Goal 4"></path>
+						<path class="arc" fill="#CA6768" d="M5.878304635907295e-15,-96A96,96 0 0,1 17.141461900669125,-94.45724050546845L0,0Z" title="Example Top Goal 5"></path>
+						<path class="arc" fill="#9A040C" d="M17.141461900669125,-94.45724050546845A96,96 0 0,1 33.7319831118089,-89.87854758141478L0,0Z" title="Example Top Goal 6"></path>
+						</g>
+						</svg>
+					</div><!-- end of piechart -->
+					<a href="#" class="group link-light full-width-legend" ng-repeat="cTopGoal in cTopGoals">
+						<div class="legend-circle">
+							<svg width="10" height="10">
+						    	<circle cx="5" cy="5" r="5" fill="{{cTopGoal.color}}"></circle>
+						    </svg>
+						</div><!-- end of legend-cicle -->
+						<div class="legend-name">
+							{{cTopGoal.name}}
+						</div><!-- end of legend name -->
+						<div class="legend-value">
+							{{cTopGoal.value}} goals
+						</div><!-- end of legend-value -->
+					</a>
+				</div><!-- end of group contribution -->
+			</div><!--- end of widget-box -->
+		</div><!-- end of dashboard module -->
+	</div><!-- end of row -->
+	<div class="row">
+		<div class="col-sm-15">
+<pre class="prettyprint lang-html linenums">
+&lt;div class="panel panel-default"&gt;
+...
+&lt;/div&gt;
+</pre>
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	
+	<div class="row">
+		<div class="col-sm-15">
+			<h1>Risk Areas</h1>
+		</div><!-- end of col 15 -->
+		<div class="col-sm-5">
+			<p>
+			The Risk Areas module displays all goals that are more 
+			than 25% behind schedule, have contributors, and are at 
+			least one level removed from a top company goal. It displays 
+			the goal owners profile image, name, goal name, cheer link, 
+			nudge link, and progress bar.
+			</p>
+		</div><!-- end of col 5 -->
+		<div class="col-sm-5 col-sm-offset-2 dashboardModule">
+			<div class="widget-box panel panel-default widget-box-small scrollable">
+				<div class="table-list goal-risk">
+					<table class="table" ng-init="atRiskGoals = [
+{
+owner:'John Nhoj', 
+picture:'images/m1.jpg', 
+goal:'At Risk Goal' 
+},
+{
+owner:'Jessie Eissej', 
+picture:'images/f1.jpg', 
+goal:'At Risk Goal'
+},
+{
+owner:'Johanna Annahoj', 
+picture:'images/f2.jpg', 
+goal:'At Risk Goal' 
+},
+{
+owner:'Joy Yoj', 
+picture:'images/f3.jpg', 
+goal:'At Risk Goal' 
+},
+{
+owner:'Mary Yram', 
+picture:'images/f4.jpg', 
+goal:'At Risk Goal' 
+},
+{
+owner:'Peter Retep', 
+picture:'images/m2.jpg', 
+goal:'At Risk Goal'
+},
+{
+owner:'Sebastian Naitsabes', 
+picture:'images/m3.jpg', 
+goal:'At Risk Goal'
+},
+{
+owner:'Bob Bob', 
+picture:'images/m4.jpg', 
+goal:'At Risk Goal'
+}	
+				]">
+						<tbody>
+							<tr class="team-member goal-risk-table" ng-repeat="atRiskGoal in atRiskGoals">
+								<td class="text-center vertical-top" style="width: 47px;">
+									<a href="#">
+										<img class="team-member-image img-circle" src="{{atRiskGoal.picture}}">
+									</a>
+								</td>
+								<td>
+									<div class="team-member-description">
+										<a href="#">
+											<div class="team-member-name">
+												{{atRiskGoal.goal}}
+											</div><!-- end of team-member-name -->
+											<div class="widget-detail">
+												{{atRiskGoal.owner}}		
+													<span class="goal-risk-social">
+														<a href="#" class="feed-item-cheer goal-risk-social"> Cheer</a>
+														<a href="#" class="feed-item-nudge goal-risk-social"> Nudge</a>
+													</span>
+											</div><!-- end of widget-detail -->
+											<div class="progress-bar-container">
+												<div class="pull-right progress-bar-text">
+												37%
+												</div>
+												<div class="progress">
+													<div class="progress-bar progress-bar-expected" style="width: 78%; padding-left: 37%;">
+														<span class="progress-bar-expected-text">78%</span>
+													</div>
+													<div class="progress-bar progress-bar-warning" style="width: 37%;">
+													</div>
+												</div><!-- end of progress -->
+											</div><!-- end of progress-container -->
+										</a>
+									</div><!-- end of team-member-description -->
+								</td>
+							</tr>
+						</tbody>
+					</table><!-- end of table -->
+				</div><!-- end of goal-risk -->
+			</div><!-- end of widget box -->
+		</div><!-- end of dashboard module -->
+	</div><!-- end of row -->
+	
+</div><!-- end of col main -->
+
+<script type="text/javascript-lazy">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	});
+	
+	$( ".progress-meter-expected" ).mouseenter(function(){
+		$( "div.meter-progress").hide();
+		$( "div.meter-expected").show();
+	});
+	
+	$( ".progress-meter-expected" ).mouseleave(function(){
+		$( "div.meter-progress").show();
+		$( "div.meter-expected").hide();
+	});
+
+	$(".arc").tooltip({
+	    'container': 'body',
+	    'placement': 'top'
+	 });
+	
+</script>

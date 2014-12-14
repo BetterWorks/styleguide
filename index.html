@@ -1,134 +1,114 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-<head>
+<html lang="en" ng-app="styleGuide">
+  <head>
     <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="" name="description">
-    <meta content="" name="author">
-    <link href="favicon.ico" rel="icon">
-    <title>BetterWorks Styleguide</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="'Styleguide &mdash; ' + title">Styleguide</title>
+	<link href="favicon.ico" rel="icon">    
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="stylesheets/animations.css" rel="stylesheet">
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/angular-route.js"></script>
+    <script src="javascripts/angular-animate.js"></script>
+    <script src="app.js"></script>
+	<script src="javascripts/controllers.js"></script>
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
 
-<body onload="prettyPrint()">
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button class="navbar-toggle side" data-toggle="offcanvas" style="float: left; margin-left: 10px;" type="button"><span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span> <span class="icon-bar"><span class=
-                "glyphicon glyphicon-arrow-right sidebar-arrow"></span></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="img/logo-small-inverse.png" alt="logo">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav"></ul>
-            </div>
-            <!-- /.nav-collapse -->
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" ng-controller="navCtrl">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#/">
+                        Styleguide
+                    </a>
+                </li>
+                <li ng-class="navClass('grid')">
+                    <a href="#grid">Grid System</a>
+                </li>
+                <li ng-class="navClass('typography')">
+                    <a href="#typography">Typography</a>
+                </li>
+                <li ng-class="navClass('buttonsProgressBars')">
+                    <a href="#buttonsProgressBars">Buttons & Progress Bars</a>
+                </li>
+                <li ng-class="navClass('formElements')">
+                    <a href="#formElements">Forms Elements</a>
+                </li>
+                <li ng-class="navClass('colors')">
+                    <a href="#colors">Color Swatches</a>
+                </li>
+                <li ng-class="navClass('dashboardModules')">
+                    <a href="#dashboardModules">Dashboard Modules</a>
+                </li>
+                <li ng-class="navClass('feedItems')">
+                    <a href="#feedItems">Feed Items</a>
+                </li>
+                <li>
+                    <a href="#">Tables & Lists</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- /.navbar -->
-
-    <div class="container-fluid">
-        <div class="row row-offcanvas row-offcanvas-left">
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-                <div class="list-group sidebar">
-                    <a class="list-group-item active" href="#">Styleguide</a>
-                    <a class="list-group-item" href="grid.html">Grid</a>
-                    <a class="list-group-item" href="typography.html">Typography</a> <a class="list-group-item" href="button_progress_bars.html">Buttons & Progress
-                    Bars</a> <a class="list-group-item" href="forms.html">Forms</a> <a class="list-group-item" href="colors.html">Colors</a> <a class="list-group-item" href="dashboard_modules.html">Dashboard Modules</a> <a class="list-group-item" href="feed_items.html">Feed Items</a>
-                    <a class="list-group-item" href="lists.html">Tables & Lists</a>
-                </div>
-            </div>
-            <!--/.sidebar-offcanvas-->
-
-            <div class="col-sm-12 col-sm-offset-3 main">
+        <!-- /#sidebar-wrapper -->
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		  <div class="container navbar-container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" id="menu-toggle">
+		      	<div id="results" style="width: 14px; height: 14px;">
+					<svg width="20px" height="16px" id="icons" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+					<g id="hamburger" style="display:none;">
+					<rect y="1" width="20" height="2"/>
+					<rect y="7"  width="20" height="2"/>
+					<rect y="13" width="20" height="2"/>
+					</g>
+					<g id="close" style="display:none;">
+					<polygon points="16,14.6 9.4,8 16,1.4 14.6,0 8,6.6 1.4,0 0,1.4 6.6,8 0,14.6 1.4,16 8,9.4 14.6,16 "/>
+					</g>
+					</svg>
+				</div>
+		      </button>
+		      <a class="navbar-brand" href="#/"><img src="images/logo-small-inverse.png" alt="logo"></a>
+		    </div>
+		  </div>
+		</nav>
+		
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8 col-sm-9">
-                        <h1 class="styleguide"><a href=
-                        "#"><small>BetterWorks</small></a></h1>
-
-                        <h1 class="styleguideTitle">Styleguide</h1>
-
-                        <p class="phead">Welcome to the BetterWorks Styleguide! This guide was created to streamline the development of BetterWorks' products. It centralizes patterns to help clearly communicate brand standards between departments. It includes both visual examples as well as their font-end, HTML & CSS counterparts adhering to current web standards.</p>
-                    </div>
-                    <!-- end of col-sm-8 -->
-                </div>
-                <!-- end of row -->
-
-                <div class="row">
-                    <div class="col-md-6 col-sm-7">
-                        <h2>Bibliography</h2>
-
-                        <p>This styleguide would not have been possible if it weren't for these awesome people and resources:</p>
-
-                        <ul class="bibliography-list">
-                            <li>
-                                <a href="http://getbootstrap.com/">Bootstrap</a>
-                            </li>
-
-                            <li>
-                                <a href="http://glyphicons.com/">Glyphcons</a>
-                            </li>
-
-                            <li>
-                                <a href="http://www.endswithak.com/">Erik
-                                Myers</a> <span class="ghost">Worlds Greatest
-                                Designer</span>
-                            </li>
-
-                            <li>
-                                <a href="http://ux.mailchimp.com/patterns">MailChimp
-                                Pattern Library</a>
-                            </li>
-
-                            <li>
-                                <a href="https://code.google.com/p/google-code-prettify/">
-                                Google Prettify</a>
-                            </li>
-                        </ul>
+                    <div class="view-container">
+                        <div ng-view class="view-frame"></div>
                     </div>
                 </div>
-                <!-- end of row -->
             </div>
-            <!--/.col-xs-12.col-sm-9-->
         </div>
-        <!--/row-->
+        <!-- /#page-content-wrapper -->
 
-        <footer>
-            <div class="btn-group btn-group-justified">
-                <div class="btn-group">
-                    <a href="lists.html">
-                        <button class="btn btn-default" type="button">&lt; Lists</button>
-                    </a>
-                </div>
-
-                <div class="btn-group">
-                    <a href="grid.html">
-                        <button class="btn btn-default" type="button">Grid &gt;</button>
-                    </a>
-                </div>
-            </div>
-        </footer>
     </div>
-    <!--/.container-->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- /#wrapper -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/offcanvas.js"></script>
-    <script src="js/prettify.js" type="text/javascript"></script>
-</body>
-
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="javascripts/prettify.js"></script>
+    <script type="text/javascript" src="javascripts/svg-morpheus.js"></script>
+    <script type="text/javascript" src="javascripts/hamburger_morph.js"></script>
+    <script src="javascripts/angular-loadscript.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+  </body>
 </html>

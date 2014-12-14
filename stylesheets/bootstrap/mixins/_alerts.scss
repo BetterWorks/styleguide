@@ -1,0 +1,14 @@
+// Alerts
+
+@mixin alert-variant($background, $border, $text-color) {
+  background-color: $background;
+  border-color: $border;
+  color: $text-color;
+
+  hr {
+    border-top-color: shade($border, 5%);
+  }
+  .alert-link {
+    color: shade($text-color, 12%);
+  }
+}
