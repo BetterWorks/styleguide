@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title ng-bind="'Styleguide &mdash; ' + title">Styleguide</title>
-	<link href="favicon.ico" rel="icon">    
+
+    <!-- Bootstrap -->
+    <link href="favicon.ico" rel="icon">
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/animations.css" rel="stylesheet">
     <script src="javascripts/angular.min.js"></script>
@@ -53,8 +55,8 @@
                 <li ng-class="navClass('feedItems')">
                     <a href="#feedItems">Feed Items</a>
                 </li>
-                <li>
-                    <a href="#">Tables & Lists</a>
+                <li ng-class="navClass('tablesAndLists')">
+                    <a href="#tablesAndLists">Tables & Lists</a>
                 </li>
             </ul>
         </div>
@@ -104,6 +106,7 @@
     <script type="text/javascript" src="javascripts/svg-morpheus.js"></script>
     <script type="text/javascript" src="javascripts/hamburger_morph.js"></script>
     <script src="javascripts/angular-loadscript.js"></script>
+    <script src="javascripts/jquery-ui.js"></script>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();

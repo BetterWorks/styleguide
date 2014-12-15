@@ -1,0 +1,240 @@
+<div class="col-sm-15 main">
+	<div class="row">
+	    <div class="col-md-8 col-sm-9">	
+	        <h1 class="styleguideTitle">Tables & Lists</h1>
+	
+	        <p class="phead">For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p><br><br>
+	    </div><!-- end of col-sm-8 -->
+	</div><!-- end of row -->
+	
+	<div class="row">
+		<div class="col-sm-5">
+			<h1>Tables</h1>
+			<p>
+			Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-15">
+			<div class="ui-droppable">
+				<div class="goallist-container push-top">
+					<div class="content-wrapper">
+						<div class="table-responsive">
+						<table id="myTable" class="table table-hover table-clickable goallist no-margin tablesorter" ng-init="tableItems = [
+{
+name:'John Nhoj', 
+picture:'images/m1.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 1'
+},
+{
+name:'Jessie Eissej', 
+picture:'images/f1.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 2'	
+},
+{
+name:'Johanna Annahoj', 
+picture:'images/f2.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 3'
+},
+{
+name:'Joy Yoj', 
+picture:'images/f3.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 4'
+},
+{
+name:'Mary Yram', 
+picture:'images/f4.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 5'
+},
+{
+name:'Peter Retep', 
+picture:'images/m2.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 6'
+},
+{
+name:'Sebastian Naitsabes', 
+picture:'images/m3.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 7'
+},
+{
+name:'Bob Bob', 
+picture:'images/m4.jpg', 
+lastUpdated:'16 hours ago', 
+due:'in 17 days',
+goal: 'Example Goal 8'
+}
+				]">
+							<thead>
+								<tr class="goallist-header">
+									<th class="goallist-header-column column-drag pointer">
+										
+									</th>
+									<th class="goallist-header-column column-owner pointer">
+										Owner
+									</th>
+									<th class="goallist-header-column column-contributing pointer">
+										
+									</th>
+									<th class="goallist-header-column column-name pointer">
+										Goal
+									</th>
+									<th class="goallist-header-column column-checkedin pointer">
+										Checked In
+									</th>
+									<th class="goallist-header-column column-due pointer">
+										Due
+									</th>
+									<th class="goallist-header-column column-progress pointer">
+										Progress
+									</th>
+									<th class="goallist-header-column column-actions pointer">
+										Actions
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="goallist-goal ui-draggable ui-draggable-handle" style="position: relative;" ng-repeat="tableItem in tableItems">
+									<td class="goallist-goal-column column-drag">
+										<a href class="goallist-goal-padding">
+											<span class="push-left nowrap">
+												<i class="drag-handler"></i>
+											</span>
+										</a>
+									</td><!-- end of goallist-goal-column column-drag -->
+									<td class="goallist-goal-column column-owner pointer">
+										<a href class="goallist-goal-padding">
+											<img class="owner-picture img-circle media-object pull-left" src="{{tableItem.picture}}">
+											<span class="owner-name media-body">
+												{{tableItem.name}}
+											</span>
+										</a>
+									</td><!-- end of goallist-goal-column column-owner -->
+									<td class="goallist-goal-column column-contributing vertical-middle pointer">
+										<a href class="goallist-goal-padding">
+											
+										</a>
+									</td><!-- end of column-contributing -->
+									<td class="goallist-goal-column column-name vertical-middle pointer">
+										<a class="goallist-goal-padding">
+											{{tableItem.goal}}
+										</a>
+									</td><!-- end of column name -->
+									<td class="goallist-goal-column column-checkedin vertical-middle pointer text-capitalize">
+										<a href class="goallist-goal-padding">
+											{{tableItem.lastUpdated}}
+										</a>
+									</td><!-- end of column-checkedin -->
+									<td class="goallist-goal-column column-due vertical-middle">
+										<a class="goallist-goal-padding">
+											{{tableItem.due}}
+										</a>
+									</td><!-- end of column-checkedin -->
+									<td class="goallist-goal-column column-progress vertical-middle pointer">
+										<a class="goallist-goal-padding">
+											<div class="progress-bar-left">
+												<div class="progress-bar-container">
+													<div class="pull-right progress-bar-text">
+														70%
+													</div><!-- end of progress-bar-text -->
+													<div class="progress">
+													    <div class="progress-bar progress-bar-expected" style="width: 80%; padding-left: 0px;">
+													      <span class="progress-bar-expected-text">80%</span>
+													    </div>
+													    <div class="progress-bar progress-bar-success" style="width: 70%;">
+													    </div>
+													</div>
+												</div><!-- end of progress-bar-container -->
+											</div><!-- end of progress-bar-left -->
+										</a>
+									</td><!-- end of column-checkedin -->
+									<td class="goallist-goal-column column-actions goallist-goal-padding vertical-middle">
+										<table>
+											<tbody>
+												<tr>
+													<td>
+														
+													</td>
+													<td>
+														<span>
+															<i class="ss-location pointer text-primary icon-large hover-lighten"></i>
+														</span>
+													</td>
+													<td>
+														<span class="dropdown-container">
+															<a href class="dropdown-toggle shadowless btn btn-xs btn-circle" data-toggle="dropdown" aria-expanded="false">
+																<i class="ss-dropdown"></i>
+															</a>
+															<ul class="dropdown-menu menu-list pull-right" role="menu">
+																<li>
+																	<a href="#">
+																		<i class="ss-layers icon-wrap"></i><span>Clone</span>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="ss-box icon-wrap"></i><span>Archive</span>
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		<i class="ss-delete icon-wrap"></i><span>Delete</span>
+																	</a>
+																</li>
+															</ul>
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td><!-- end of column-actions -->
+								</tr>
+							</tbody>
+						</table>
+						</div><!-- end of table responsive -->
+					</div><!-- end of content wrapper -->
+				</div><!-- end of goallist-container -->
+			</div><!-- end of ui-droppable -->
+		</div><!-- end of col 15 -->
+	</div><!-- end of row -->
+	
+	
+
+                <div class="row">
+                    <div class="col-sm-15">
+                        <pre class="prettyprint lang-html linenums">
+
+</pre>
+                    </div><!-- end of col-sm-14 -->
+                </div><!-- end of row -->
+            </div><!--/.col-xs-12.col-sm-9-->
+        </div><!--/row-->
+        
+        <script type="text/javascript-lazy">
+			$( "tbody" ).sortable({
+				helper:"clone",
+				revert:"invalid",
+				start: function(e, ui) {
+					$(ui.helper).addClass("ui-draggable-helper");
+				},
+				revertDuration:200,
+				distance:5,
+				axis:"y",
+				placeholder: "sortable-placeholder"
+			});
+			
+        </script>

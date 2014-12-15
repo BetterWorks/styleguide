@@ -7098,6 +7098,293 @@ dd {
   white-space: nowrap; }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+										TABLES AND LISTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.ui-droppable {
+  position: relative; }
+
+.push-top {
+  margin-top: 10px !important; }
+
+.goallist {
+  min-width: 784px;
+  margin-left: -20px; }
+
+.no-margin {
+  margin: 0; }
+
+.goallist .goallist-header .goallist-header-column {
+  color: #333333;
+  font-family: "District-Medium";
+  font-size: 14px;
+  border-style: none;
+  padding-left: 0; }
+
+.goallist .goallist-goal .column-drag, .goallist .goallist-header .column-drag {
+  min-width: 30px;
+  width: 30px;
+  padding-right: 3px; }
+
+.pointer {
+  cursor: pointer; }
+
+.table thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #D9D9D9; }
+
+.table caption + thead tr:first-child td, .table caption + thead tr:first-child th, .table colgroup + thead tr:first-child td, .table colgroup + thead tr:first-child th, .table thead:first-child tr:first-child td, .table thead:first-child tr:first-child th {
+  border-top: 0; }
+
+.goallist .goallist-goal .column-owner, .goallist .goallist-header .column-owner {
+  width: 40%; }
+
+.goallist .goallist-goal .column-contributing, .goallist .goallist-header .column-contributing {
+  min-width: 23px;
+  padding: 8px 0; }
+
+.goallist .goallist-goal .column-name, .goallist .goallist-header .column-name {
+  width: 60%; }
+
+.goallist .goallist-goal .column-checkedin, .goallist .goallist-header .column-checkedin {
+  min-width: 125px; }
+
+.goallist .goallist-goal .column-due, .goallist .goallist-header .column-due {
+  min-width: 130px; }
+
+.goallist .goallist-goal .column-progress, .goallist .goallist-header .column-progress {
+  min-width: 175px; }
+
+.goallist .goallist-goal .column-actions, .goallist .goallist-header .column-actions {
+  min-width: 100px;
+  text-align: center; }
+
+.allgoals .goallist .goallist-goal.dragged .goallist-goal-column, .allgoals .goallist .goallist-goal:not(.dragging):not(:hover) .goallist-goal-column.column-drag {
+  border-style: none; }
+
+.goallist .goallist-goal .column-drag {
+  text-align: center; }
+
+.goallist .goallist-goal .goallist-goal-column {
+  background-clip: padding-box;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  line-height: 1em;
+  word-break: break-word;
+  padding: 0; }
+
+.goallist .goallist-goal .column-drag, .goallist .goallist-header .column-drag {
+  min-width: 30px;
+  width: 30px;
+  padding-right: 3px; }
+
+.table-clickable tbody > tr > td {
+  padding: 0; }
+
+.goallist .goallist-goal .goallist-goal-padding {
+  padding: 17px 10px 17px 0; }
+
+.table-clickable tbody > tr > td > a {
+  color: inherit;
+  display: block;
+  height: 100%;
+  padding: 8px; }
+
+.allgoals .goallist .goallist-goal:not(.dragging):not(:hover) .column-drag i.drag-handler {
+  visibility: hidden; }
+
+.column-drag, i.drag-handler {
+  visibility: hidden; }
+
+.goallist-goal:hover .column-drag,
+.goallist-goal:hover i.drag-handler {
+  visibility: visible; }
+
+.sortable-placeholder {
+  height: 60px; }
+
+.ui-draggable-helper {
+  background-color: #ffffff;
+  border: #5bc0de;
+  border-color: #5bc0de;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6); }
+
+.ui-draggable-helper .column-drag,
+.ui-draggable-helper i.drag-handler {
+  visibility: visible; }
+
+.goallist .goallist-goal .column-drag i.drag-handler {
+  width: 3px;
+  height: 19px;
+  box-shadow: 0 0 2px #ffffff; }
+
+.drag-handler {
+  cursor: move;
+  display: inline-block;
+  vertical-align: middle; }
+
+.drag-handler:after, .drag-handler:before {
+  background-color: #EAEAEA;
+  box-shadow: 0 0 1px #ffffff, 0 0 2px #ffffff;
+  content: '';
+  display: inline-block;
+  height: 25px;
+  margin-right: 2px;
+  width: 2px; }
+
+.push-left {
+  margin-left: 10px !important; }
+
+.goallist .goallist-goal .column-owner {
+  padding-left: 5px; }
+
+.goallist .goallist-goal .owner-picture {
+  height: 25px;
+  width: 25px;
+  margin-right: 8px; }
+
+.media-object {
+  display: block; }
+
+.goallist .goallist-goal .owner-name {
+  line-height: 25px; }
+
+.goallist .goallist-goal .column-name {
+  line-height: 1.2em; }
+
+.goallist .goallist-goal .progress-bar-container {
+  padding-right: 10px; }
+
+.progress-bar-left .progress-bar-text {
+  padding-left: 8px;
+  text-align: left; }
+
+.column-progress .progress-bar-text {
+  cursor: default;
+  min-width: 42px;
+  text-align: right;
+  position: relative;
+  top: 4px; }
+
+.pull-right {
+  float: right !important; }
+
+.progress {
+  border-radius: 3px;
+  margin-bottom: 0;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.progress {
+  overflow: hidden;
+  height: 20px;
+  background-color: #F2F2F2;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+.goallist .goallist-goal .column-actions table tr > td {
+  border-top: 0 none !important;
+  text-align: center;
+  width: 30px; }
+
+.dropdown-container {
+  position: relative; }
+
+.goallist .goallist-goal .column-actions table .btn-xs, .goallist .goallist-goal .column-actions table .btn-group-xs > .btn {
+  padding: 0 6px; }
+
+.goallist .goallist-goal .column-actions table a {
+  text-decoration: none; }
+
+.dropdown-container a.dropdown-toggle.shadowless {
+  box-shadow: none; }
+
+.dropdown-container a.dropdown-toggle {
+  background-color: #F2F2F2;
+  box-shadow: 0 0 0 1px #EAEAEA inset;
+  color: #555;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-size: 12px; }
+
+.dropdown-container a.dropdown-toggle:hover {
+  background: #D9D9D9;
+  color: #333333; }
+
+.btn-circle {
+  border-radius: 50%; }
+
+.dropdown-menu.menu-list {
+  margin-top: 16px; }
+
+.column-actions .ss-dropdown:before, .ss-dropdown.right:after {
+  font-size: 6px !important; }
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto; }
+
+.dropdown-menu {
+  border-color: #EAEAEA;
+  border-radius: 3px;
+  box-shadow: none;
+  margin-right: -6px;
+  text-align: left; }
+
+.goallist .goallist-goal .column-actions table a {
+  text-decoration: none; }
+
+.dropdown-menu.menu-list .icon-wrap {
+  width: 20px;
+  display: inline-block; }
+
+@media screen and (max-width: 950px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15.75px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #D9D9D9; }
+
+  .table-responsive > .table {
+    margin-bottom: 0; }
+
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap; }
+
+  .table-responsive > .table-bordered {
+    border: 0; }
+
+  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0; }
+
+  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0; }
+
+  .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0; } }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 										FORM ELEMENTS
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 label {
@@ -8026,6 +8313,9 @@ a.navbar-brand {
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0; } }
+@media (max-width: 768px) {
+  .grid_row_numbers {
+    display: none; } }
 /*# sourceMappingURL=main.css.map */
 
-/*# sourceMappingURL=_bootstrap.css.map */
+/*# sourceMappingURL=bootstrap.css.map */

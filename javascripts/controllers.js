@@ -53,6 +53,13 @@ styleguideControllers.controller('feedItemsController', function($scope, $locati
 		$scope.toggle = true;
 });
 
+styleguideControllers.controller('tablesAndListsController', function($scope, $location) {
+	$("html, body").animate({
+            scrollTop: 0
+		}, 1);
+		$scope.toggle = true;
+});
+
 
 
 styleguideControllers.controller('navCtrl', ['$scope', '$location', function ($scope, $location) {

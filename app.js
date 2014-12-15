@@ -64,6 +64,13 @@ styleGuide.config(function($routeProvider) {
 		title : 'Feed Items',
 		templateUrl : 'pages/feedItems.html',
 		controller  : 'feedItemsController'
+	})
+	
+	// route for the tables & lists page
+	.when('/tablesAndLists', {
+		title : 'Tables & Lists',
+		templateUrl : 'pages/tablesAndLists.html',
+		controller  : 'tablesAndListsController'
 	});
 	
 });
