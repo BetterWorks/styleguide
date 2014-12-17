@@ -86,6 +86,18 @@ strong {
 	color: $brand-info;
 }
 
+code {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+code:hover {
+	background-color: $brand-primary-lighter;
+	color: $brand-primary;
+}
+
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 													TYPOGRAPHY
@@ -1318,7 +1330,7 @@ a.listwidget-item:hover {
 	display: inline-block;
 	font-family: $font-family-sans-serif;
 	font-size: $font-size-base;
-	margin-left: 2px;
+	margin-left: 5px;
 	min-width: 20px;
 	position: relative;
 	top: 2px;
@@ -1341,6 +1353,141 @@ a.listwidget-item:hover {
 	top: 35%;
 }
 
+.scrollable {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 303px;
+	height: 300px;
+}
+
+.group-contribution .piechart {
+	text-align: center;
+	padding: 20px;
+}
+
+.group-contribution .group {
+	display: table;
+	width: 100%;
+}
+
+.link-light {
+	color: $gray-base;
+	text-decoration: none;
+}
+
+.group-contribution .full-width-legend .legend-circle {
+	left: 25px;
+	position: absolute;
+}
+
+.group-contribution .full-width-legend .legend-name {
+	margin-left: 40px;
+}
+
+.group-contribution .full-width-legend .legend-value {
+	color: $gray-dark !important;
+	margin-bottom: 5px;
+	margin-left: 40px;
+}
+
+.arc,.pie-slice {
+    -webkit-transition:all .25s ease;
+    -moz-transition:all .25s ease;
+    -ms-transition:all .25s ease;
+    -o-transition:all .25s ease;
+    transition:all .25s ease
+}
+
+.arc:hover,.pie-slice:hover {
+    -moz-transform:scale(1.03);
+    -webkit-transform:scale(1.03);
+    -o-transform:scale(1.03);
+    -ms-transform:scale(1.03);
+    transform:scale(1.03)
+}
+
+.goal-risk table {
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.table-list .team-member td:first-child {
+	padding-left: 10px;
+}
+.table-list .goal-item:first-child td, .table-list .team-member:first-child td {
+	border-top: none;
+}
+
+.table-list .team-member td {
+	height: 74px;
+	padding: 17px 5px;
+}
+
+.table-list .team-member td:last-child {
+	padding-right: 10px;
+}
+
+.team-member-description {
+	margin-top: 2px;
+}
+
+.goal-risk .widget-detail {
+	padding-bottom: 8px;
+}
+
+.goal-risk a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.widget-detail {
+	display: block;
+	font-size: $font-size-small;
+	color: $gray-dark;
+	font-family: $font-family-sans-serif;
+}
+
+.goal-risk .goal-risk-social {
+	color: $brand-primary !important;
+	cursor: pointer;
+}
+
+.goal-risk .progress-bar-container .progress {
+	height: 14px;
+}
+
+.progress {
+	margin-bottom: 0px;
+	position: relative;
+	-webkit-user-select: none;
+}
+
+.progress-bar-expected {
+	background-color: $gray;
+}
+
+.progress-bar {
+	box-shadow: none;
+	max-width: 100%;
+	position: absolute;
+}
+
+.progress-bar-text {
+	font-size: $font-size-small;
+	cursor: default;
+	min-width: 42px;
+	text-align: right;
+	position: relative;
+	top: -2px;
+}
+
+.progress-bar-expected .progress-bar-expected-text {
+	color: $gray-dark;
+	cursor: default;
+	display: none;
+	vertical-align: middle;
+	font-size: $font-size-small;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1486,6 +1633,415 @@ dd {
 	margin-bottom: 12px;
 }
 
+/* Hottest Goal */
+
+.widget-stretch {
+	height: 100%;
+	margin: 0 auto;
+	max-width: 231px;
+	padding: 20px 0 0;
+	position: relative;
+}
+
+.hottest-goal-widget-goal {
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+.widget-logo.hottestgoal-logo {
+	background-image: url(../images/fire.png);
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+.widget-logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	height: 102px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.widget-description {
+	font-family: $font-family-sans-serif;
+	line-height: 17px;
+	max-height: 65px;
+	overflow: hidden;
+}
+
+.media:first-child {
+	margin-top: 0;
+}
+
+.hottest-goal-widget-goal .hottest-goal-name {
+	line-height: 1;
+	max-height: 3em;
+}
+
+.widget-detail {
+	color: $gray-dark;
+	font-family: $font-family-sans-serif;
+	display: block;
+	font-size: $font-size-small;
+}
+
+.img-small {
+	height: 32px;
+	width: 32px;
+}
+
+.push-bottom {
+	margin-bottom: 10px!important;
+}
+
+.icon-large {
+	font-size: 1.2em;
+	margin-right: 10px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+										TABLES AND LISTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.ui-droppable {
+	position: relative;
+}
+
+.push-top {
+	margin-top: 10px!important;
+}
+
+.goallist {
+	min-width: 784px;
+	margin-left: -20px;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+
+.goallist .goallist-header .goallist-header-column {
+	color: $gray-base;
+	font-family: $font-family-sans-serif-med;
+	font-size: $font-size-base;
+	border-style: none;
+	padding-left: 0;
+}
+
+.goallist .goallist-goal .column-drag, .goallist .goallist-header .column-drag {
+	min-width: 30px;
+	width: 30px;
+	padding-right: 3px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.table thead>tr>th {
+	vertical-align: bottom;
+	border-bottom: 2px solid $gray;
+}
+
+.table caption+thead tr:first-child td, .table caption+thead tr:first-child th, .table colgroup+thead tr:first-child td, .table colgroup+thead tr:first-child th, .table thead:first-child tr:first-child td, .table thead:first-child tr:first-child th {
+	border-top: 0;
+}
+
+.goallist .goallist-goal .column-owner, .goallist .goallist-header .column-owner {
+	width: 40%;
+}
+
+.goallist .goallist-goal .column-contributing, .goallist .goallist-header .column-contributing {
+	min-width: 23px;
+	padding: 8px 0;
+}
+
+.goallist .goallist-goal .column-name, .goallist .goallist-header .column-name {
+	width: 60%;
+}
+
+.goallist .goallist-goal .column-checkedin, .goallist .goallist-header .column-checkedin {
+	min-width: 125px;
+}
+
+.goallist .goallist-goal .column-due, .goallist .goallist-header .column-due {
+	min-width: 130px;
+}
+
+.goallist .goallist-goal .column-progress, .goallist .goallist-header .column-progress {
+	min-width: 175px;
+}
+
+.goallist .goallist-goal .column-actions, .goallist .goallist-header .column-actions {
+	min-width: 100px;
+	text-align: center;
+}
+
+.allgoals .goallist .goallist-goal.dragged .goallist-goal-column, .allgoals .goallist .goallist-goal:not(.dragging):not(:hover) .goallist-goal-column.column-drag {
+border-style: none;
+}
+
+.goallist .goallist-goal .column-drag {
+	text-align: center;
+}
+
+.goallist .goallist-goal .goallist-goal-column {
+	background-clip: padding-box;
+	border-top: 1px solid $gray;
+	border-bottom: 1px solid $gray;
+	line-height: 1em;
+	word-break: break-word;
+	padding: 0;
+}
+
+.goallist .goallist-goal .column-drag, .goallist .goallist-header .column-drag {
+	min-width: 30px;
+	width: 30px;
+	padding-right: 3px;
+}
+
+.table-clickable tbody>tr>td {
+	padding: 0;
+}
+
+.goallist .goallist-goal .goallist-goal-padding {
+	padding: 17px 10px 17px 0;
+}
+
+.table-clickable tbody>tr>td>a {
+	color: inherit;
+	display: block;
+	height: 100%;
+	padding: 8px;
+}
+
+.allgoals .goallist .goallist-goal:not(.dragging):not(:hover) .column-drag i.drag-handler {
+	visibility: hidden;
+}
+
+.column-drag, i.drag-handler {
+	visibility: hidden;
+}
+
+.goallist-goal:hover .column-drag,
+.goallist-goal:hover  i.drag-handler {
+	visibility: visible;
+}
+
+.sortable-placeholder {
+	height: 60px;
+}
+
+.ui-draggable-helper {
+	background-color: $primary-white;
+	border: $input-border-focus;
+	border-color: #5bc0de;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.ui-draggable-helper .column-drag,
+.ui-draggable-helper i.drag-handler {
+	visibility: visible;
+}
+
+.goallist .goallist-goal .column-drag i.drag-handler {
+	width: 3px;
+	height: 19px;
+	box-shadow: 0 0 2px $primary-white;
+}
+
+.drag-handler {
+	cursor: move;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.drag-handler:after, .drag-handler:before {
+	background-color: $gray-light;
+	box-shadow: 0 0 1px $primary-white,0 0 2px $primary-white;
+	content: '';
+	display: inline-block;
+	height: 25px;
+	margin-right: 2px;
+	width: 2px;
+}
+
+.push-left {
+	margin-left: 10px!important;
+}
+
+.goallist .goallist-goal .column-owner {
+	padding-left: 5px;
+}
+
+.goallist .goallist-goal .owner-picture {
+	height: 25px;
+	width: 25px;
+	margin-right: 8px;
+}
+
+.media-object {
+	display: block;
+}
+
+.goallist .goallist-goal .owner-name {
+	line-height: 25px;
+}
+
+.goallist .goallist-goal .column-name {
+	line-height: 1.2em;
+}
+
+.goallist .goallist-goal .progress-bar-container {
+	padding-right: 10px;
+}
+
+.progress-bar-left .progress-bar-text {
+	padding-left: 8px;
+	text-align: left;
+}
+
+.column-progress .progress-bar-text {
+	cursor: default;
+	min-width: 42px;
+	text-align: right;
+	position: relative;
+	top: 4px;
+}
+
+.pull-right {
+	float: right!important;
+}
+
+.progress {
+	border-radius: $border-radius-base;
+	margin-bottom: 0;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.progress {
+	overflow: hidden;
+	height: 20px;
+	background-color: $gray-lighter;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.goallist .goallist-goal .column-actions table tr>td {
+	border-top: 0 none!important;
+	text-align: center;
+	width: 30px;
+}
+
+.dropdown-container {
+	position: relative;
+}
+
+.goallist .goallist-goal .column-actions table .btn-xs {
+	padding: 0 6px;
+}
+.goallist .goallist-goal .column-actions table a {
+	text-decoration: none;
+}
+.dropdown-container a.dropdown-toggle.shadowless {
+	box-shadow: none;
+}
+
+.dropdown-container a.dropdown-toggle {
+	background-color: $gray-lighter;
+	box-shadow: 0 0 0 1px $gray-light inset;
+	color: $gray-darker;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	font-size: $font-size-small;
+}
+
+.dropdown-container a.dropdown-toggle:hover {
+	background: $gray;
+	color: $gray-base;
+}
+
+.btn-circle {
+	border-radius: $border-radius-oval;
+}
+
+.dropdown-menu.menu-list {
+	margin-top: 16px;
+}
+
+.column-actions .ss-dropdown:before, .ss-dropdown.right:after {
+	font-size: 6px !important;
+}
+
+.dropdown-menu.pull-right {
+	right: 0;
+	left: auto;
+}
+
+.dropdown-menu {
+	border-color: $gray-light;
+	border-radius: $border-radius-base;
+	box-shadow: none;
+	margin-right: -6px;
+	text-align: left;
+}
+
+.goallist .goallist-goal .column-actions table a {
+	text-decoration: none;
+}
+
+.dropdown-menu.menu-list .icon-wrap {
+	width: 20px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 1100px) {
+    .table-responsive {
+      width: 100%;
+      margin-bottom: 15.75px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #D9D9D9; }
+      .table-responsive > .table {
+        margin-bottom: 0; }
+        .table-responsive > .table > thead > tr > th,
+        .table-responsive > .table > thead > tr > td,
+        .table-responsive > .table > tbody > tr > th,
+        .table-responsive > .table > tbody > tr > td,
+        .table-responsive > .table > tfoot > tr > th,
+        .table-responsive > .table > tfoot > tr > td {
+          white-space: nowrap; }
+      .table-responsive > .table-bordered {
+        border: 0; }
+        .table-responsive > .table-bordered > thead > tr > th:first-child,
+        .table-responsive > .table-bordered > thead > tr > td:first-child,
+        .table-responsive > .table-bordered > tbody > tr > th:first-child,
+        .table-responsive > .table-bordered > tbody > tr > td:first-child,
+        .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+        .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+          border-left: 0; }
+        .table-responsive > .table-bordered > thead > tr > th:last-child,
+        .table-responsive > .table-bordered > thead > tr > td:last-child,
+        .table-responsive > .table-bordered > tbody > tr > th:last-child,
+        .table-responsive > .table-bordered > tbody > tr > td:last-child,
+        .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+        .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+          border-right: 0; }
+        .table-responsive > .table-bordered > tbody > tr:last-child > th,
+        .table-responsive > .table-bordered > tbody > tr:last-child > td,
+        .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+        .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+          border-bottom: 0; } }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 										FORM ELEMENTS
@@ -2362,6 +2918,10 @@ a.navbar-brand {
     position:fixed
 }
 
+.progress-bar .tooltip {
+    text-align: left;
+}
+
 .hover-blue:before {
     display:block;
     position:absolute;
@@ -2625,8 +3185,14 @@ a.navbar-brand {
         position: relative;
         margin-right: 0;
     }
+
 }
 
+@media(max-width:768px) {
+	.grid_row_numbers {
+		display: none;
+	}
+}
 
 
 /*# sourceMappingURL=main.css.map */

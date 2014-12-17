@@ -62,8 +62,38 @@
 		<div class="col-sm-15">
 <pre class="prettyprint lang-html linenums">
 &lt;div class="panel panel-default"&gt;
-...
-&lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;div class="media"&gt;
+      &lt;a class="media-left" href="#"&gt;
+        &lt;img class="img-larger img-circle media-object pull-left" src="images/125_medium.png" alt="profile picture"&gt;
+      &lt;/a&gt;
+      &lt;div class="media-body mediaBodyModule"&gt; 
+        &lt;a href="" class="mySummaryHeader"&gt;
+          &lt;div class="push-bottom-half"&gt;
+          Jacobim Mugatu
+          &lt;span class="badges"&gt;
+            &lt;img src="images/vip_graphic.svg" alt="VIP badge" data-toggle="tooltip" data-placement="top" title="Very Influential Professional"&gt;
+          &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/a&gt;
+        &lt;div class="ghost mySummarySubhead push-bottom-half"&gt;
+        Fashion Mogul
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-xs-5"&gt;
+            &lt;i class="icon-goal vertical-middle"&gt;&lt;/i> &lt;span class="ghost"&gt;5&lt;/span&gt;
+          &lt;/div&gt;&lt;!-- end of col-xs-5 --&gt;
+          &lt;div class="col-xs-5"&gt;
+            &lt;i class="icon-waypoint vertical-middle"&gt;&lt;/i> &lt;span class="ghost"&gt;86&lt;/span&gt;
+          &lt;/div&gt;&lt;!-- end of col-xs-5 --&gt;
+          &lt;div class="col-xs-5"&gt;
+            &lt;i class="icon-cheer vertical-middle"&gt;&lt;/i> &lt;span class="ghost"&gt;25&lt;/span&gt;
+          &lt;/div&gt;&lt;!-- end of col-xs-5 --&gt;
+        &lt;/div&gt;&lt;!-- end of row --&gt;
+      &lt;/div&gt;&lt;!-- end of media body --&gt;
+    &lt;/div&gt;&lt;!-- end of media --&gt;
+  &lt;/div&gt;&lt;!-- end of panel body --&gt;
+&lt;/div&gt;&lt;!-- end of panel --&gt;
 </pre>
 		</div><!-- end of col 15 -->
 	</div><!-- end of row -->
@@ -187,8 +217,55 @@ percentage:'25%'
 	<div class="row">
 		<div class="col-sm-15">
 <pre class="prettyprint lang-html linenums">
-&lt;div class="panel panel-default"&gt;
-...
+&lt;div class="panel panel-default widget-box-large widget-box"&gt;
+  &lt;div class="goalstats-header"&gt;
+    &lt;div class="goal-stats-progress progress-meter" style="font-size: 178px; height: 178px;"&gt;
+      &lt;div class="meter-text"&gt;
+        &lt;div class="meter-progress"&gt;
+          &lt;div class="meter-value"&gt;
+            &lt;span>49&lt;/span&gt;
+            &lt;span class="meter-percentage">%&lt;/span&gt;
+          &lt;/div&gt;&lt;!-- end of meter value --&gt;
+          &lt;div class="meter-label"&gt;
+          Overall &lt;br&gt; Progress
+          &lt;/div&gt;&lt;!-- end of meter-label --&gt;
+        &lt;/div&gt;&lt;!-- end of meter-progress --&gt;
+        &lt;div class="meter-expected"&gt;
+          &lt;div class="meter-value"&gt;
+            &lt;span&gt;68&lt;/span&gt;
+            &lt;span class="meter-percentage"&gt;%&lt;/span&gt;
+          &lt;/div&gt;&lt;!-- end of meter-value --&gt;
+          &lt;div class="meter-label"&gt;
+          Expected&lt;br&gt;Progress
+          &lt;/div&gt;&lt;!-- end of meter-label --&gt;
+        &lt;/div&gt;&lt;!-- end of meter-expected --&gt;
+      &lt;/div&gt;&lt;!-- end of meter-text --&gt;
+      &lt;svg width="178" height="178" id="goal-stats-svg">&lt;/svg>
+    &lt;/div&gt;&lt;!-- end of goal-stats-progress --&gt;
+  &lt;/div&gt;&lt;!-- end of goalstats-header --&gt;
+  &lt;div class="goalstats-list"&gt;
+    &lt;div class="goalstats-goal"&gt;
+      &lt;a href="#"&gt;
+        &lt;div class="goalstats-name"&gt;
+          &lt;p class="goal-item-description"&gt;
+          Goal Name
+          &lt;/p&gt;
+          &lt;span class="goal-item-detail"&gt;
+          Goal Detail
+          &lt;/span&gt;
+        &lt;/div>&lt;!-- end of goalstats-name --&gt;
+        &lt;div class="goalstats-progress"&gt;
+          &lt;div class="progress-icon progress-icon-large"&gt;
+            &lt;svg width="19" height="19">&lt;/svg&gt;
+          &lt;/div>&lt;!-- end of progress icon --&gt;
+          &lt;span class="goal-item-progress">Goal %&lt;/span&gt;
+        &lt;/div>&lt;!-- end of goalstats progress --&gt;
+      &lt;/a>
+    &lt;/div>&lt;!-- end of goalstats goal --&gt;
+  &lt;/div>&lt;!-- end of goalstats-list --&gt;
+  &lt;div class="btn-wrapper widget-bottom-box goal-stats-bottom"&gt;
+    &lt;a href="#" class="btn btn-primary btn-block">Create Goal&lt;/a&gt;
+  &lt;/div>&lt;!-- end of goal stats bottom --&gt;
 &lt;/div&gt;
 </pre>
 		</div><!-- end of col 15 -->
@@ -276,8 +353,21 @@ progress:'0%'
 	<div class="row">
 		<div class="col-sm-15">
 <pre class="prettyprint lang-html linenums">
-&lt;div class="panel panel-default"&gt;
-...
+&lt;div class="panel panel-default widget-box-small table-list"&gt;
+  &lt;div class="listwidget-list"&gt;
+    &lt;a href="#" class="listwidget-item"&gt;
+      &lt;div class="listwidget-image"&gt;
+        &lt;img src="../img" class="team-member-image img-circle"&gt;
+      &lt;/div&gt;&lt;!-- end of listwidget-image --&gt;
+      &lt;div class="listwidget-name"&gt;
+        &lt;span class="team-member-name"&gt;Name&lt;/span&gt;
+        &lt;span class="widget-detail"&gt;Last Updated&lt;/span&gt;
+      &lt;/div&gt;&lt;!-- end of listwidget-name --&gt;
+      &lt;div class="listwidget-progress overall-progress"&gt;
+      Progress
+      &lt;/div&gt;&lt;!-- end of listwidget progress --&gt;
+    &lt;/a&gt;&lt;!-- end of listwidget item --&gt;
+  &lt;/div&gt;&lt;!-- end of listwidget-list --&gt;
 &lt;/div&gt;
 </pre>
 		</div><!-- end of col 15 -->
@@ -325,18 +415,49 @@ progress:'0%'
 					    </div><!-- end of col-xs-5 -->
 					    <div class="col-xs-5">
 						    <i class="ss-view icon-large  vertical-middle ghost" data-toggle="tooltip" data-placement="top" title="Views"></i> <span class="ghost">144</span>
+					    </div>
 						</div><!-- end of row -->
 					</div><!-- end of push bottom -->
 				</div><!-- end of widget stretch -->
 			</div><!-- end of widget hottest goal -->
 		</div><!-- end of col offset 2 -->
 	</div><!-- end of row -->
-	</div>
 	<div class="row">
 		<div class="col-sm-15">
 <pre class="prettyprint lang-html linenums">
-&lt;div class="panel panel-default"&gt;
-...
+&lt;div class="widget-box panel panel-default widget-box-small widget-hottest-goal"&gt;
+  &lt;div class="widget-stretch"&gt;
+    &lt;div class="hottest-goal-widget-goal"&gt;
+      &lt;div class="widget-logo hottestgoal-logo"&gt;
+      &lt;/div&gt;&lt;!-- end of widget-logo --&gt;
+      &lt;div class="widget-description"&gt;
+        &lt;div class="media"&gt;
+          &lt;a class="media-left" href="#"&gt;
+            &lt;img src="images/125_medium.png" class="media-object img-circle img-small pull-left"&gt;
+          &lt;/a&gt;
+          &lt;div class="media-body"&gt;
+            &lt;div class="hottest-goal-name"&gt;
+            This is the hottest goal. Its so hot right now!
+            &lt;/div&gt;&lt;!-- end of hottest-goal-name --&gt;
+            &lt;span class="widget-detail"&gt;Jacobim Mugatu&lt;/span&gt;
+          &lt;/div&gt;&lt;!-- end of media body --&gt;
+        &lt;/div&gt;&lt;!-- end of media --&gt;
+      &lt;/div&gt;&lt;!-- end of widget description --&gt;
+    &lt;/div&gt;&lt;!-- end of hottest-goal-widget-goal --&gt;
+    &lt;div class="push-bottom"&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-xs-5"&gt;
+          &lt;i class="icon-cheer icon-large  vertical-middle ghost"&gt;&lt;/i&gt; &lt;span class="ghost"&gt;5&lt;/span&gt;
+        &lt;/div&gt;&lt;!-- end of col-xs-5 --&gt;
+        &lt;div class="col-xs-5"&gt;
+          &lt;i class="ss-chat icon-large  vertical-middle ghost"&gt;&lt;/i&gt; &lt;span class="ghost"&gt;86&lt;/span&gt;
+        &lt;/div&gt;&lt;!-- end of col-xs-5 --&gt;
+        &lt;div class="col-xs-5"&gt;
+          &lt;i class="ss-view icon-large  vertical-middle ghost"&gt;&lt;/i&gt; &lt;span class="ghost"&gt;144&lt;/span&gt;
+        &lt;/div&gt;&lt;!-- end of col-xs-5 --&gt;
+      &lt;/div&gt;&lt;!-- end of row --&gt;
+    &lt;/div&gt;&lt;!-- end of push bottom --&gt;
+  &lt;/div&gt;&lt;!-- end of widget stretch --&gt;
 &lt;/div&gt;
 </pre>
 		</div><!-- end of col 15 -->
@@ -398,8 +519,24 @@ name:'Example Goal 5'
 	<div class="row">
 		<div class="col-sm-15">
 <pre class="prettyprint lang-html linenums">
-&lt;div class="panel panel-default"&gt;
-...
+&lt;div class="widget-box panel panel-default widget-box-small table-list"&gt;
+  &lt;div class="listwidget-list"&gt;
+    &lt;a href="#" class="listwidget-item"&gt;
+      &lt;div class="listwidget-image"&gt;
+        &lt;img class="team-member-image img-circle" src="../img"&gt;
+      &lt;/div&gt;&lt;!-- end of listwidget-image --&gt;
+      &lt;div class="listwidget-name"&gt;
+        &lt;span class="team-member-name"&gt;Goal Name&lt;/span&gt;
+        &lt;span class="widget-detail"&gt;Jacobim Mugatu&lt;/span&gt;
+      &lt;/div&gt;&lt;!-- end of listwidget-name --&gt;
+      &lt;div class="listwidget-progress nowrap"&gt;
+        &lt;div class="progress-icon progress-icon-large"&gt;
+          &lt;svg width="19" height="19"&gt;&lt;/svg&gt;
+        &lt;/div&gt;&lt;!-- end of progress icon --&gt;
+        &lt;span class="goal-item-progress"&gt;58%&lt;/span&gt;
+      &lt;/div&gt;&lt;!-- end of listwidget-progress --&gt;
+    &lt;/a&gt;&lt;!-- end of listwidget-item --&gt;
+  &lt;/div&gt;&lt;!-- end of listwidget-list --&gt;
 &lt;/div&gt;
 </pre>
 		</div><!-- end of col 15 -->
@@ -482,8 +619,26 @@ color: '#9A040C'
 	<div class="row">
 		<div class="col-sm-15">
 <pre class="prettyprint lang-html linenums">
-&lt;div class="panel panel-default"&gt;
-...
+&lt;div class="widget-box panel panel-default widget-box-small scrollable"&gt;
+  &lt;div class="group-contribution"&gt;
+    &lt;div class="piechart"&gt;
+      &lt;svg width="170" height="170" viewBox="0 0 200 200"&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;&lt;!-- end of piechart --&gt;
+    &lt;a href="#" class="group link-light full-width-legend"&gt;
+      &lt;div class="legend-circle"&gt;
+        &lt;svg width="10" height="10"&gt;
+          &lt;circle cx="5" cy="5" r="5" fill="color">&lt;/circle&gt;
+        &lt;/svg&gt;
+      &lt;/div&gt;&lt;!-- end of legend-cicle --&gt;
+      &lt;div class="legend-name"&gt;
+      Goal Name
+      &lt;/div&gt;&lt;!-- end of legend name --&gt;
+      &lt;div class="legend-value"&gt;
+      Contributing Goals
+      &lt;/div&gt;&lt;!-- end of legend-value --&gt;
+    &lt;/a&gt;
+  &lt;/div>&lt;!-- end of group contribution --&gt;
 &lt;/div&gt;
 </pre>
 		</div><!-- end of col 15 -->
@@ -589,7 +744,53 @@ goal:'At Risk Goal'
 			</div><!-- end of widget box -->
 		</div><!-- end of dashboard module -->
 	</div><!-- end of row -->
-	
+	<div class="row">
+<pre class="prettyprint lang-html linenums">
+  &lt;div class="widget-box panel panel-default widget-box-small scrollable"&gt;
+    &lt;div class="table-list goal-risk"&gt;
+      &lt;table class="table"&gt;
+        &lt;tbody&gt;
+          &lt;tr class="team-member goal-risk-table">
+            &lt;td class="text-center vertical-top" style="width: 47px;"&gt;
+              &lt;a href="#"&gt;
+                &lt;img class="team-member-image img-circle" src="../img"&gt;
+              &lt;/a&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;div class="team-member-description"&gt;
+                &lt;a href="#"&gt;
+                  &lt;div class="team-member-name"&gt;
+                  Goal Name
+                  &lt;/div&gt;&lt;!-- end of team-member-name --&gt;
+                  &lt;div class="widget-detail"&gt;
+                  Owner		
+                    &lt;span class="goal-risk-social"&gt;
+                      &lt;a href="#" class="feed-item-cheer goal-risk-social"> Cheer&lt;/a&gt;
+                      &lt;a href="#" class="feed-item-nudge goal-risk-social"> Nudge&lt;/a&gt;
+                    &lt;/span&gt;
+                  &lt;/div&gt;&lt;!-- end of widget-detail --&gt;
+                  &lt;div class="progress-bar-container"&gt;
+                    &lt;div class="pull-right progress-bar-text"&gt;
+                    37%
+                    &lt;/div&gt;
+                    &lt;div class="progress"&gt;
+                      &lt;div class="progress-bar progress-bar-expected" style="width: 78%; padding-left: 37%;"&gt;
+                        &lt;span class="progress-bar-expected-text"&gt;78%&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="progress-bar progress-bar-warning" style="width: 37%;"&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- end of progress --&gt;
+                  &lt;/div&gt;&lt;!-- end of progress-container --&gt;
+                &lt;/a&gt;
+              &lt;/div>&lt;!-- end of team-member-description --&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;&lt;!-- end of table --&gt;
+    &lt;/div&gt;&lt;!-- end of goal-risk --&gt;
+  &lt;/div&gt;&lt;!-- end of widget box --&gt;
+</pre>
+	</div><!-- end of row -->
 </div><!-- end of col main -->
 
 <script type="text/javascript-lazy">

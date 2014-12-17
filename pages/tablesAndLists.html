@@ -23,60 +23,76 @@
 						<div class="table-responsive">
 						<table id="myTable" class="table table-hover table-clickable goallist no-margin tablesorter" ng-init="tableItems = [
 {
-name:'John Nhoj', 
-picture:'images/m1.jpg', 
+name:'Jacobim Mugatu', 
+picture:'images/125_medium.png', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 1'
+goal: 'Example Goal 1',
+iconOne: '',
+iconTwo: 'icon-waypoint'
 },
 {
 name:'Jessie Eissej', 
 picture:'images/f1.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 2'	
+goal: 'Example Goal 2',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'		
 },
 {
 name:'Johanna Annahoj', 
 picture:'images/f2.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 3'
+goal: 'Example Goal 3',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'	
 },
 {
 name:'Joy Yoj', 
 picture:'images/f3.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 4'
+goal: 'Example Goal 4',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'
 },
 {
 name:'Mary Yram', 
 picture:'images/f4.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 5'
+goal: 'Example Goal 5',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'
 },
 {
 name:'Peter Retep', 
 picture:'images/m2.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 6'
+goal: 'Example Goal 6',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'
 },
 {
 name:'Sebastian Naitsabes', 
 picture:'images/m3.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 7'
+goal: 'Example Goal 7',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'
 },
 {
 name:'Bob Bob', 
 picture:'images/m4.jpg', 
 lastUpdated:'16 hours ago', 
 due:'in 17 days',
-goal: 'Example Goal 8'
+goal: 'Example Goal 8',
+iconOne: 'icon-cheer',
+iconTwo: 'icon-nudge'
 }
 				]">
 							<thead>
@@ -167,11 +183,13 @@ goal: 'Example Goal 8'
 											<tbody>
 												<tr>
 													<td>
-														
+														<span>
+															<i class="{{tableItem.iconOne}} pointer text-primary icon-large hover-lighten"></i>
+														</span>
 													</td>
 													<td>
 														<span>
-															<i class="ss-location pointer text-primary icon-large hover-lighten"></i>
+															<i class="{{tableItem.iconTwo}} pointer text-primary icon-large hover-lighten"></i>
 														</span>
 													</td>
 													<td>
@@ -215,9 +233,134 @@ goal: 'Example Goal 8'
 	
 
                 <div class="row">
+	                <br>
+	                <br>
                     <div class="col-sm-15">
-                        <pre class="prettyprint lang-html linenums">
-
+<pre class="prettyprint lang-html linenums">
+&lt;div class="ui-droppable"&gt;
+  &lt;div class="goallist-container push-top"&gt;
+    &lt;div class="content-wrapper"&gt;
+      &lt;div class="table-responsive"&gt;
+        &lt;table id="myTable" class="table table-hover table-clickable goallist no-margin tablesorter"&gt;
+          &lt;thead&gt;
+            &lt;tr class="goallist-header"&gt;
+              &lt;th class="goallist-header-column column-drag pointer"&gt;
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-owner pointer"&gt;
+              Owner
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-contributing pointer"&gt;
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-name pointer"&gt;
+              Goal
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-checkedin pointer"&gt;
+              Checked In
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-due pointer"&gt;
+              Due
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-progress pointer"&gt;
+              Progress
+              &lt;/th&gt;
+              &lt;th class="goallist-header-column column-actions pointer"&gt;
+              Actions
+              &lt;/th&gt;
+            &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+            &lt;tr class="goallist-goal ui-draggable ui-draggable-handle" style="position: relative;"&gt;
+              &lt;td class="goallist-goal-column column-drag"&gt;
+                &lt;a href class="goallist-goal-padding"&gt;
+                  &lt;span class="push-left nowrap"&gt;&lt;i class="drag-handler"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of goallist-goal-column column-drag --&gt;
+              &lt;td class="goallist-goal-column column-owner pointer"&gt;
+                &lt;a href class="goallist-goal-padding"&gt;
+                  &lt;img class="owner-picture img-circle media-object pull-left" src="../img"&gt;
+                  &lt;span class="owner-name media-body"&gt;Table Item&lt;/span&gt;
+                &lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of goallist-goal-column column-owner --&gt;
+              &lt;td class="goallist-goal-column column-contributing vertical-middle pointer"&gt;
+                &lt;a href class="goallist-goal-padding"&gt;
+                &lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of column-contributing --&gt;
+              &lt;td class="goallist-goal-column column-name vertical-middle pointer"&gt;
+                &lt;a class="goallist-goal-padding"&gt;Table Goal&lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of column name --&gt;
+              &lt;td class="goallist-goal-column column-checkedin vertical-middle pointer text-capitalize"&gt;
+                &lt;a href class="goallist-goal-padding"&gt;Last Updated&lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of column-checkedin --&gt;
+              &lt;td class="goallist-goal-column column-due vertical-middle"&gt;
+                &lt;a class="goallist-goal-padding"&gt;Due&lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of column-checkedin --&gt;
+              &lt;td class="goallist-goal-column column-progress vertical-middle pointer"&gt;
+                &lt;a class="goallist-goal-padding"&gt;
+                  &lt;div class="progress-bar-left"&gt;
+                    &lt;div class="progress-bar-container"&gt;
+                      &lt;div class="pull-right progress-bar-text"&gt;
+                      70%
+                      &lt;/div&gt;&lt;!-- end of progress-bar-text --&gt;
+                      &lt;div class="progress"&gt;
+                        &lt;div class="progress-bar progress-bar-expected" style="width: 80%; padding-left: 0px;"&gt;
+                          &lt;span class="progress-bar-expected-text"&gt;80%&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class="progress-bar progress-bar-success" style="width: 70%;"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;&lt;!-- end of progress-bar-container --&gt;
+                  &lt;/div&gt;&lt;!-- end of progress-bar-left --&gt;
+                &lt;/a&gt;
+              &lt;/td&gt;&lt;!-- end of column-checkedin --&gt;
+              &lt;td class="goallist-goal-column column-actions goallist-goal-padding vertical-middle"&gt;
+                &lt;table&gt;
+                  &lt;tbody&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;
+                      &lt;/td&gt;
+                      &lt;td&gt;
+                        &lt;span&gt;
+                          &lt;i class="ss-location pointer text-primary icon-large hover-lighten"&gt;&lt;/i&gt;
+                        &lt;/span&gt;
+                      &lt;/td&gt;
+                      &lt;td&gt;
+                        &lt;span class="dropdown-container"&gt;
+                          &lt;a href class="dropdown-toggle shadowless btn btn-xs btn-circle" data-toggle="dropdown"&gt;
+                            &lt;i class="ss-dropdown"&gt;&lt;/i&gt;
+                          &lt;/a&gt;
+                          &lt;ul class="dropdown-menu menu-list pull-right" role="menu"&gt;
+                            &lt;li&gt;
+                              &lt;a href="#"&gt;
+                                &lt;i class="ss-layers icon-wrap"&gt;&lt;/i&gt;
+                                &lt;span&gt;Clone&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                              &lt;a href="#"&gt;
+                                &lt;i class="ss-box icon-wrap"&gt;&lt;/i&gt;
+                                &lt;span&gt;Archive&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                              &lt;a href="#"&gt;
+                                &lt;i class="ss-delete icon-wrap"&gt;&lt;/i&gt;
+                                &lt;span&gt;Delete&lt;/span&gt;
+                              &lt;/a&gt;
+                            &lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/span&gt;
+                      &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              &lt;/td&gt;&lt;!-- end of column-actions --&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;&lt;!-- end of table responsive --&gt;
+    &lt;/div&gt;&lt;!-- end of content wrapper --&gt;
+  &lt;/div&gt;&lt;!-- end of goallist-container --&gt;
+&lt;/div&gt;&lt;!-- end of ui-droppable --&gt;
 </pre>
                     </div><!-- end of col-sm-14 -->
                 </div><!-- end of row -->
