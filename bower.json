@@ -1,0 +1,22 @@
+{
+  "name": "styleguide",
+  "homepage": "https://github.com/BetterWorks/styleguide",
+  "authors": [
+    "cobalthex <mhines@betterworks.com>"
+  ],
+  "description": "BetterWorks Style Guide",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "style"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,117 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="styleGuide">
+<!doctype html>
+<html lang="en" ng-app="bwStyleGuide">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title ng-bind="'Styleguide &mdash; ' + title">Styleguide</title>
-	<link href="favicon.ico" rel="icon">
-    <!-- Bootstrap -->
-    
-    <link href="stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="stylesheets/animations.css" rel="stylesheet">
-    <script src="javascripts/angular.min.js"></script>
-    <script src="javascripts/angular-route.js"></script>
-    <script src="javascripts/angular-animate.js"></script>
-    <script src="app.js"></script>
-	<script src="javascripts/controllers.js"></script>
-	
+    <title ng-bind="title + ' &mdash; BetterWorks Style Guide'">BetterWorks Style Guide</title>
+    <link href="favicon.ico" rel="icon">
+
+    <link rel='stylesheet' href='css/app.css'>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
   </head>
   <body>
-    <div id="wrapper">
+    <nav role="navigation">
+      <a class="navbar-logo" href="#/"><img src="images/logo-small-inverse.png" alt="logo"></a>
+    </nav>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper" ng-controller="navCtrl">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#/">
-                        Styleguide
-                    </a>
-                </li>
-                <li ng-class="navClass('grid')">
-                    <a href="#grid">Grid System</a>
-                </li>
-                <li ng-class="navClass('typography')">
-                    <a href="#typography">Typography</a>
-                </li>
-                <li ng-class="navClass('buttonsProgressBars')">
-                    <a href="#buttonsProgressBars">Buttons & Progress Bars</a>
-                </li>
-                <li ng-class="navClass('formElements')">
-                    <a href="#formElements">Forms Elements</a>
-                </li>
-                <li ng-class="navClass('colors')">
-                    <a href="#colors">Color Swatches</a>
-                </li>
-                <li ng-class="navClass('dashboardModules')">
-                    <a href="#dashboardModules">Dashboard Modules</a>
-                </li>
-                <li ng-class="navClass('feedItems')">
-                    <a href="#feedItems">Feed Items</a>
-                </li>
-                <li ng-class="navClass('tablesAndLists')">
-                    <a href="#tablesAndLists">Tables & Lists</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		  <div class="container navbar-container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" id="menu-toggle">
-		      	<div id="results" style="width: 14px; height: 14px;">
-					<svg width="20px" height="16px" id="icons" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
-					<g id="hamburger" style="display:none;">
-					<rect y="1" width="20" height="2"/>
-					<rect y="7"  width="20" height="2"/>
-					<rect y="13" width="20" height="2"/>
-					</g>
-					<g id="close" style="display:none;">
-					<polygon points="16,14.6 9.4,8 16,1.4 14.6,0 8,6.6 1.4,0 0,1.4 6.6,8 0,14.6 1.4,16 8,9.4 14.6,16 "/>
-					</g>
-					</svg>
-				</div>
-		      </button>
-		      <a class="navbar-brand" href="#/"><img src="images/logo-small-inverse.png" alt="logo"></a>
-		    </div>
-		  </div>
-		</nav>
-		
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="view-container">
-                        <div ng-view class="view-frame"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+    <sidebar>
+      <a href="#">Introduction</a>
+      <a href="#colors">Colors</a>
+      <a href="#typography">Typography</a>
+      <a href="#grid">Grid System</a>
+      <sidebar>
+        Components
+        <a href="#buttons">Buttons and Links</a>
+      </sidebar>
+    </sidebar>
 
-    </div>
-    <!-- /#wrapper -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="javascripts/prettify.js"></script>
-    <script type="text/javascript" src="javascripts/svg-morpheus.js"></script>
-    <script type="text/javascript" src="javascripts/hamburger_morph.js"></script>
-    <script type="text/javascript" src="javascripts/angular-loadscript.js"></script>
-    <script type="text/javascript" src="javascripts/jquery-ui.js"></script>
-    <script type="text/javascript" src="javascripts/bootstrap.js"></script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+    <div ng-view></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

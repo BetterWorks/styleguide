@@ -1,78 +1,36 @@
 'use strict';
 
-var styleGuide = angular.module('styleGuide', [
-	'ngRoute', 
-	'ngAnimate', 
-	'styleguideControllers',
-	'ngLoadScript'
+var styleGuide = angular.module('bwStyleGuide', [
+	'ngRoute',
+	'ngAnimate',
 ]);
 
 styleGuide.config(function($routeProvider) {
 	$routeProvider
-	
-	// route for the home page
 	.when('/', {
-		title : 'BetterWorks',
-		templateUrl : 'pages/home.html',
-		controller  : 'mainController'
+		title      : 'BetterWorks',
+		templateUrl: 'pages/intro.html'
 	})
-	
-	// route for the grid page
 	.when('/grid', {
-		title : 'Grid',
-		templateUrl : 'pages/grid.html',
-		controller  : 'gridController'
+		title      : 'Grid',
+		templateUrl: 'pages/grid.html'
 	})
-	
-	// route for the typography page
 	.when('/typography', {
-		title : 'Typography',
-		templateUrl : 'pages/typography.html',
-		controller  : 'typographyController'
+		title      : 'Typography',
+		templateUrl: 'pages/typography.html'
 	})
-	
-	// route for the buttons and progress page
-	.when('/buttonsProgressBars', {
-		title : 'Buttons & Progress Bars',
-		templateUrl : 'pages/buttonsProgressBars.html',
-		controller  : 'buttonsProgressBarsController'
+	.when('/buttons', {
+		title      : 'Buttons & Links',
+		templateUrl: 'pages/buttonsProgressBars.html'
 	})
-	
-	// route for the form elements page
-	.when('/formElements', {
-		title : 'Form Elements',
-		templateUrl : 'pages/formElements.html',
-		controller  : 'formElementsController'
+	.when('/forms', {
+		title      : 'Forms',
+		templateUrl: 'pages/formElements.html'
 	})
-	
-	// route for the colors page
 	.when('/colors', {
-		title : 'Colors',
-		templateUrl : 'pages/colors.html',
-		controller  : 'colorsController'
+		title      : 'Colors',
+		templateUrl: 'pages/colors.html'
 	})
-	
-	// route for the dashboard modules page
-	.when('/dashboardModules', {
-		title : 'Dashboard Modules',
-		templateUrl : 'pages/dashboardModules.html',
-		controller  : 'dashboardModulesController'
-	})
-	
-	// route for the feed items page
-	.when('/feedItems', {
-		title : 'Feed Items',
-		templateUrl : 'pages/feedItems.html',
-		controller  : 'feedItemsController'
-	})
-	
-	// route for the tables & lists page
-	.when('/tablesAndLists', {
-		title : 'Tables & Lists',
-		templateUrl : 'pages/tablesAndLists.html',
-		controller  : 'tablesAndListsController'
-	});
-	
 });
 
 
@@ -88,10 +46,9 @@ styleGuide.directive('prettyprint', function() {
 });
 
 styleGuide.run(['$location', '$rootScope', function($location, $rootScope) {
-    $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-        if (current.hasOwnProperty('$$route')) {
-            $rootScope.title = current.$$route.title;
-        }
-    });
+  $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+    console.log(arguments);
+      if (current.hasOwnProperty('$$route'))
+        $rootScope.title = current.$$route.title;
+  });
 }]);
-
