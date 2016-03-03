@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title ng-bind="title + ' &mdash; BetterWorks Style Guide'">BetterWorks Style Guide</title>
+    <title ng-bind="pageTitle + ' &mdash; BetterWorks Style Guide'">BetterWorks Style Guide</title>
     <link href="favicon.ico" rel="icon">
 
     <link rel='stylesheet' href='css/app.css'>
@@ -18,16 +18,13 @@
       <a class="navbar-logo" href="#/"><img src="images/logo-small-inverse.png" alt="logo"></a>
     </nav>
 
-    <sidebar>
-      <a href="#">Introduction</a>
-      <a href="#colors">Colors</a>
-      <a href="#typography">Typography</a>
-      <a href="#grid">Grid System</a>
-      <sidebar>
-        Components
-        <a href="#buttons">Buttons and Links</a>
-      </sidebar>
-    </sidebar>
+    <div class="sidebar">
+      <a ng-class="{active: pagePath == 'colors'}" href="#colors">Colors</navlink>
+      <a ng-class="{active: pagePath == 'typography'}" href="#typography">Typography</a>
+      <a ng-class="{active: pagePath == 'grid'}" href="#grid">Grid System</a>
+      <hr>
+      <a ng-class="{active: pagePath == 'buttons'}" href="#buttons">Buttons and Links</a>
+    </div>
 
     <div ng-view></div>
 

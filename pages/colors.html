@@ -1,0 +1,20 @@
+<section>
+  <h1>Brand Colors</h1>
+  <div class="swatches" ng-repeat="swatch in ['bw-gray', 'bw-blue', 'bw-green', 'bw-yellow', 'bw-orange', 'bw-red']">
+    <div class="swatch-name">{{ swatch}}</div>
+    <div tooltip="{{ '@' + swatch + '-dark' }}" tooltip-under class="swatch" ng-class="swatch + '-dark'"></div>
+    <div tooltip="{{ '@' + swatch }}" tooltip-under class="swatch" ng-class="swatch"></div>
+    <div tooltip="{{ '@' + swatch + '-light' }}" tooltip-under class="swatch" ng-class="swatch + '-light'"></div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <h1>Palette</h1>
+  <div tooltip="{{ '@bw-palette-' + ($index + 1) }}" tooltip-under class="swatch" ng-class="'palette-' + ($index + 1)" ng-repeat="n in [].constructor(20) track by $index"></div>
+</section>
+
+<section>
+  <h1>Profile Colors</h1>
+  <div tooltip="{{ '@bw-palette-' + ($index + 20) }}" tooltip-under class="swatch" ng-class="'palette-' + ($index + 20)" ng-repeat="n in [].constructor(8) track by $index"></div>
+</section>

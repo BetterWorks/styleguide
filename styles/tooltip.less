@@ -1,0 +1,39 @@
+[tooltip]:hover {
+  &::before {
+    content     : '';
+    position    : absolute;
+    top         : -11px;
+    margin-left : -5px;
+    border-color: #000 transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+    z-index     : 1001;
+  }
+
+  &::after {
+    content      : attr(tooltip);
+    position     : absolute;
+    top          : -100%;
+    transform    : translateX(-50%);
+    font-size    : 80%;
+    line-height  : 1;
+    color        : #fff;
+    background   : #000;
+    padding      : 6px 8px;
+    border-radius: 4px;
+    white-space  : nowrap;
+    z-index      : 1000;
+    display      : inline-block;
+  }
+  //
+  // &[tooltip-under] {
+  //   &::before {
+  //     top         : 10px;
+  //     border-color: transparent transparent #000;
+  //   }
+  //
+  //   &::after {
+  //     top: 0;
+  //   }
+  // }
+}

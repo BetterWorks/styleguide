@@ -21,18 +21,20 @@ styleGuide.config(function($routeProvider) {
 	})
 	.when('/buttons', {
 		title      : 'Buttons & Links',
-		templateUrl: 'pages/buttonsProgressBars.html'
+		templateUrl: 'pages/buttons.html'
 	})
 	.when('/forms', {
 		title      : 'Forms',
-		templateUrl: 'pages/formElements.html'
+		templateUrl: 'pages/forms.html'
 	})
 	.when('/colors', {
 		title      : 'Colors',
 		templateUrl: 'pages/colors.html'
 	})
+	.otherwise({
+		redirectTo: '/'
+	});
 });
-
 
 styleGuide.directive('prettyprint', function() {
   return {
@@ -47,8 +49,10 @@ styleGuide.directive('prettyprint', function() {
 
 styleGuide.run(['$location', '$rootScope', function($location, $rootScope) {
   $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-    console.log(arguments);
       if (current.hasOwnProperty('$$route'))
-        $rootScope.title = current.$$route.title;
+			{
+        $rootScope.pageTitle = current.$$route.title;
+				$rootScope.pagePath  = current.$$route.originalPath.substr(1);
+			}
   });
 }]);

@@ -1,23 +1,28 @@
-sidebar {
+.sidebar {
   position  : fixed;
   top       : 50px;
   left      : 0;
   bottom    : 0;
   width     : 300px;
-  background: #ddd;
+  background: #eee;
   padding   : 20px 0;
-}
-sidebar {
-  a, sidebar {
+
+  a {
     position       : static;
     width          : auto;
     display        : block;
     padding        : 15px 40px;
     text-decoration: none;
     color          : #000;
+    transition     : 0.2s background;
   }
 
-  a:target {
-    background: rgba(0, 0, 0, 0.2);
+  a:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  a.active {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.05);
   }
 }
