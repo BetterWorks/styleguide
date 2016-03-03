@@ -1,15 +1,16 @@
 .swatch {
-  display    : inline-block;
-  margin     : 2px;
-  padding    : 0;
-  width      : 36px;
-  height     : 36px;
-  line-height: 36px;
-  text-align : center;
-  color      : white;
-  position   : relative;
+  display       : inline-block;
+  margin        : 2px;
+  padding       : 0;
+  width         : 36px;
+  height        : 36px;
+  line-height   : 36px;
+  text-align    : center;
+  color         : white;
+  position      : relative;
+  vertical-align: middle;
 
-  &.dots:before {
+  &.dots::before {
     display      : block;
     position     : absolute;
     content      : '';
@@ -20,7 +21,7 @@
     width        : 6px;
     height       : 6px;
   }
-  &.dots:after {
+  &.dots::after {
     display      : block;
     position     : absolute;
     content      : '';
@@ -30,6 +31,18 @@
     border-radius: 50%;
     width        : 6px;
     height       : 6px;
+  }
+
+  &.color-border {
+    background: @color-border;
+  }
+
+  &.black {
+    background: #000;
+  }
+  &.white {
+    background: #fff;
+    border    : 1px solid #ddd
   }
 
   .pal-loop(@i: 1) when (@i <= length(@bw-palette)) {
@@ -64,7 +77,7 @@
   display            : inline-block;
   margin             : 2px;
   padding            : 4px;
-  border             : 1px solid @border-color;
+  border             : 1px solid @color-border;
   border-radius      : 4px;
   border-bottom-width: 3px;
   background         : white;
@@ -74,7 +87,8 @@
     float : left;
   }
 
-  .swatch-name {
+  label {
+    display      : block;
     margin-bottom: 5px;
   }
 }

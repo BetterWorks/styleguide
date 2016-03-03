@@ -1,7 +1,9 @@
+<hint>Hover over colors for their LESS variable</hint>
+
 <section>
   <h1>Brand Colors</h1>
   <div class="swatches" ng-repeat="swatch in ['bw-gray', 'bw-blue', 'bw-green', 'bw-yellow', 'bw-orange', 'bw-red']">
-    <div class="swatch-name">{{ swatch}}</div>
+    <label>{{ swatch }}</label>
     <div tooltip="{{ '@' + swatch + '-dark' }}" tooltip-under class="swatch" ng-class="swatch + '-dark'"></div>
     <div tooltip="{{ '@' + swatch }}" tooltip-under class="swatch" ng-class="swatch"></div>
     <div tooltip="{{ '@' + swatch + '-light' }}" tooltip-under class="swatch" ng-class="swatch + '-light'"></div>
@@ -16,5 +18,34 @@
 
 <section>
   <h1>Profile Colors</h1>
-  <div tooltip="{{ '@bw-palette-' + ($index + 20) }}" tooltip-under class="swatch" ng-class="'palette-' + ($index + 20)" ng-repeat="n in [].constructor(8) track by $index"></div>
+  <div tooltip="{{ '@bw-palette-' + ($index + 21) }}" tooltip-under class="swatch" ng-class="'palette-' + ($index + 21)" ng-repeat="n in [].constructor(8) track by $index"></div>
+</section>
+
+<section>
+  <h1>System Colors</h1>
+  <section>
+    <h2>Borders</h2>
+    <div>
+      <span tooltip="@color-border" class="swatch color-border"></span>
+      Standard border
+    </div>
+  </section>
+
+  <section>
+    <h2>Buttons</h2>
+    <section>
+      <h3>Button</h3>
+      <div><span tooltip="@color-button" class="swatch bw-gray"></span> Normal state</div>
+      <div><span tooltip="@color-button-active" class="swatch bw-gray-dark"></span> Active state</div>
+      <div><span tooltip="@color-button-highlight" class="swatch bw-gray-light"></span> Highlighted state</div>
+      <div><span tooltip="@color-button-text" class="swatch black"></span> Text</div>
+    </section>
+    <section>
+      <h3>Primary Button</h3>
+      <div><span tooltip="@color-button-primary" class="swatch bw-blue"></span> Normal state</div>
+      <div><span tooltip="@color-button-primary-active" class="swatch bw-blue-dark"></span> Active state</div>
+      <div><span tooltip="@color-button-primary-highlight" class="swatch bw-blue-light"></span> Highlighted state</div>
+      <div><span tooltip="@color-button-primary-text" class="swatch white"></span> Text</div>
+    </section>
+  </section>
 </section>
