@@ -49,10 +49,10 @@ styleGuide.directive('prettyprint', function() {
 
 styleGuide.run(['$location', '$rootScope', function($location, $rootScope) {
   $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-      if (current.hasOwnProperty('$$route'))
-			{
-        $rootScope.pageTitle = current.$$route.title;
-				$rootScope.pagePath  = current.$$route.originalPath.substr(1);
-			}
+    if (current.hasOwnProperty('$$route'))
+		{
+      $rootScope.pageTitle = current.$$route.title;
+			$rootScope.pagePath  = current.$$route.originalPath.substr(1);
+		}
   });
 }]);
