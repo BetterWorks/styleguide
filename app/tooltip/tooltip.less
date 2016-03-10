@@ -2,20 +2,23 @@
   &::before {
     content     : '';
     position    : absolute;
-    top         : -11px;
+    left        : 50%;
     margin-left : -5px;
+    margin-top  : -10px;
     border-color: #000 transparent transparent;
     border-width: 5px;
     border-style: solid;
     z-index     : 1001;
+    font-size   : 12px;
   }
 
   &::after {
     content      : attr(tooltip);
     position     : absolute;
-    top          : -100%;
+    bottom       : 100%;
+    left         : 50%;
     transform    : translateX(-50%);
-    font-size    : 80%;
+    margin-bottom: 10px;
     line-height  : 1;
     color        : #fff;
     background   : #000;
@@ -24,16 +27,13 @@
     white-space  : nowrap;
     z-index      : 1000;
     display      : inline-block;
+    font-size    : 12px;
   }
-  //
-  // &[tooltip-under] {
-  //   &::before {
-  //     top         : 10px;
-  //     border-color: transparent transparent #000;
-  //   }
-  //
-  //   &::after {
-  //     top: 0;
-  //   }
-  // }
+}
+
+[tooltip].tooltip-monospace {
+  &::before, &::after {
+    font-family: monospace;
+    font-size  : 1em;
+  }
 }

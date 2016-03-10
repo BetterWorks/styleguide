@@ -3,8 +3,9 @@
 }
 
 html, input, textarea, select, option {
-  font-family: sans-serif;
-  font-weight: 300;
+  .bw-font;
+  .text-normal;
+  .text-base;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,9 +17,13 @@ h1, h2, h3, h4, h5, h6 {
     margin   : 5px 0;
   }
 }
-
-h1 { font-size: 1.5em; }
-h2 { font-size: 1.25em; }
+h1 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.25em;
+}
 
 hr {
   background: #bbb;
@@ -37,4 +42,24 @@ section {
 
 .hint {
   color: #888;
+}
+
+.fade-out-bottom::after {
+  content : '';
+  display : block;
+  position: relative;
+  top     : 50%;
+  height  : 50%;
+  left    : 0;
+  right   : 0;
+  margin  : 1px -1px;
+
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+
+.specimen {
+  background   : #efefef;
+  border-radius: 4px;
+  padding      : 10px;
+  margin       : 10px;
 }
