@@ -1,20 +1,23 @@
 <div class="hint">Hover over colors for their LESS variable and hex code</div>
+
 <section>
   <h1>Brand Colors</h1>
+
   <div>
     <span tooltip="@bw-blue" class="swatch bw-blue"></span>
     BetterWorks Blue
-  </div>
   </div>
 </section>
 
 <section class="bw-palette-swatches">
   <h1>Palette</h1>
+
   <div tooltip="{{ '@bw-palette-' + ($index + 1) }}" tooltip-under class="swatch" ng-class="'palette-' + ($index + 1)" ng-repeat="n in [].constructor(20) track by $index"></div>
 </section>
 
 <section class="bw-palette-swatches">
   <h1>Profile Colors</h1>
+
   <div tooltip="{{ '@bw-palette-' + ($index + 21) }}" tooltip-under class="swatch" ng-class="'palette-' + ($index + 21)" ng-repeat="n in [].constructor(8) track by $index"></div>
 </section>
 
@@ -23,26 +26,46 @@
     System Colors
     <div class="hint">Component colors are listed in their respective pages</div>
   </h1>
+
   <section>
     <h2>Page</h2>
+
     <div>
-      <span tooltip="@page-color" class="swatch page-color outline"></span>
+      <span tooltip="@page-color" class="swatch page-background-color outline"></span>
       Page background color
     </div>
+
     <div>
       <span tooltip="@page-text-color" class="swatch black"></span>
       Page text color
     </div>
+
     <div>
       <span tooltip="@container-color" class="swatch white outline"></span>
       Container background color
     </div>
   </section>
+
   <section>
     <h2>Borders</h2>
+
     <div>
-      <span tooltip="@border-color" class="swatch border-color"></span>
+      <span tooltip="@border-color" class="swatch bw-gray-light"></span>
       Standard border
+    </div>
+  </section>
+
+  <section>
+    <h2>Top navbar</h2>
+
+    <div>
+      <span tooltip="@navbar-background-color" class="swatch bw-gray-darker"></span>
+      Navbar background
+    </div>
+
+    <div>
+      <span tooltip="@navbar-search-background-color" class="swatch bw-gray-darkest"></span>
+      Navbar search field background
     </div>
   </section>
 </section>

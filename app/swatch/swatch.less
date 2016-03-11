@@ -37,25 +37,6 @@
     border: 1px solid rgba(0,0,0,0.2);
   }
 
-
-  &.border-color {
-    background: @border-color;
-  }
-  &.page-color {
-    background: @page-color;
-  }
-
-  &.black {
-    background: #000;
-  }
-  &.white {
-    background: #fff;
-  }
-
-  &.bw-blue {
-    background: @bw-blue;
-  }
-
   .pal-loop(@i: 1) when (@i <= length(@bw-palette)) {
     &.palette-@{i} {
       background: extract(@bw-palette, @i);
@@ -86,5 +67,47 @@
   label {
     display      : block;
     margin-bottom: 5px;
+  }
+}
+
+.swatch {
+  &.black {
+    background: #000;
+  }
+  &.white {
+    background: #fff;
+  }
+
+  &.bw-blue {
+    background: @bw-blue;
+  }
+
+
+  &.bw-gray-lightest {
+    background: @bw-gray-lightest;
+  }
+
+  &.bw-gray-lighter {
+    background: @bw-gray-lighter;
+  }
+
+  &.bw-gray-light {
+    background: @bw-gray-light;
+  }
+
+  &.bw-gray {
+    background: @bw-gray;
+  }
+
+  &.bw-gray-dark {
+    background: @bw-gray-dark;
+  }
+
+  &.bw-gray-darker {
+    background: @bw-gray-darker;
+  }
+
+  &.bw-gray-darkest {
+    background: @bw-gray-darkest;
   }
 }
