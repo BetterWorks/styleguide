@@ -1,4 +1,4 @@
-.swatch {
+[swatch] {
   display       : inline-block;
   margin        : 2px;
   padding       : 0;
@@ -46,7 +46,7 @@
   } .pal-loop();
 }
 
-.bw-palette-swatches .swatch:nth-of-type(4n) {
+.bw-palette-swatches [swatch]:nth-of-type(4n) {
   margin-right: 1em;
 }
 
@@ -59,7 +59,7 @@
   border-bottom-width: 3px;
   background         : white;
 
-  .swatch {
+  [swatch] {
     margin: 0;
     float : left;
   }
@@ -67,47 +67,5 @@
   label {
     display      : block;
     margin-bottom: 5px;
-  }
-}
-
-.swatch {
-  &.black {
-    background: #000;
-  }
-  &.white {
-    background: #fff;
-  }
-
-  &.bw-blue {
-    background: @bw-blue;
-  }
-
-
-  &.bw-gray-lightest {
-    background: @bw-gray-lightest;
-  }
-
-  &.bw-gray-lighter {
-    background: @bw-gray-lighter;
-  }
-
-  &.bw-gray-light {
-    background: @bw-gray-light;
-  }
-
-  &.bw-gray {
-    background: @bw-gray;
-  }
-
-  &.bw-gray-dark {
-    background: @bw-gray-dark;
-  }
-
-  &.bw-gray-darker {
-    background: @bw-gray-darker;
-  }
-
-  &.bw-gray-darkest {
-    background: @bw-gray-darkest;
   }
 }

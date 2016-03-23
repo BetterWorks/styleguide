@@ -1,10 +1,23 @@
-[tooltip]:hover {
+tooltip {
+  position     : absolute;
+  transform    : translate(-50%, -100%);
+  margin-bottom: 10px;
+  line-height  : 1;
+  color        : #fff;
+  background   : #000;
+  padding      : 6px 8px;
+  border-radius: 4px;
+  white-space  : nowrap;
+  z-index      : 1000;
+  display      : inline-block;
+  font-size    : 12px;
+
   &::before {
     content     : '';
     position    : absolute;
     left        : 50%;
+    bottom      : -10px;
     margin-left : -5px;
-    margin-top  : -10px;
     border-color: #000 transparent transparent;
     border-width: 5px;
     border-style: solid;
@@ -12,28 +25,10 @@
     font-size   : 12px;
   }
 
-  &::after {
-    content      : attr(tooltip);
-    position     : absolute;
-    bottom       : 100%;
-    left         : 50%;
-    transform    : translateX(-50%);
-    margin-bottom: 10px;
-    line-height  : 1;
-    color        : #fff;
-    background   : #000;
-    padding      : 6px 8px;
-    border-radius: 4px;
-    white-space  : nowrap;
-    z-index      : 1000;
-    display      : inline-block;
-    font-size    : 12px;
-  }
-}
-
-[tooltip].tooltip-monospace {
-  &::before, &::after {
-    font-family: monospace;
-    font-size  : 1em;
+  &.tooltip-monospace {
+    &::before, &::after {
+      font-family: monospace;
+      font-size  : 1em;
+    }
   }
 }

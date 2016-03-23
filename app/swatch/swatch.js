@@ -2,9 +2,18 @@ angular.module('bwStyleGuide').directive('swatch', ['$window', '$timeout',
 function($window, $timeout)
 {
   return {
-    restrict: 'C',
-    link: function(scope, element, attrs)
+    restrict: 'A',
+    priority: 1,
+    link    : function(scope, element, attrs)
     {
+      if (attrs.swatch.length > 0)
+      {
+        if (attrs.swatch[0] == '#')
+          element.css('background-color', attrs.swatch);
+        else
+          element.addClass(attrs.swatch);
+      }
+
       if (attrs.tooltip)
       {
         scope.$evalAsync(function()
