@@ -230,11 +230,17 @@ footer{
 .guidelines-sub-content{
 margin:25px 0 0 30px;
 }
-.guidelines-sub-content h4{
-	margin:25px 0;
+
+.guidline-first-section{
+	margin: 5px 0 65px 0;
 }
-.guidelines-sub-content h5{
-	margin-top:35px;
+.guidline-second-section h4{
+	margin-bottom:30px;
+}
+.guidline-second-section p{
+	margin-bottom:30px;
 }
 
+@media screen and (max-width: 480px) {
 
+}
