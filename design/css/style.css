@@ -4,6 +4,13 @@ body {
 
 }
 
+
+
+
+
+
+
+
 /******************* index page *****************/
 /*nav bar*/
 .logo-image{
@@ -241,6 +248,66 @@ margin:25px 0 0 30px;
 	margin-bottom:30px;
 }
 
-@media screen and (max-width: 480px) {
+
+/************************ color.html *******************/
+
+.box{
+	width:50px;
+	height:50px;
+	background-color:red;
+}
+
+
+
+
+
+.f-box{
+	width:50px;
+	height:50px;
+	background-color:red;
 
 }
+
+.s-box{
+	width:50px;
+	height:50px;
+	background-color:green;
+
+}
+.t-box{
+	width:50px;
+	height:50px;
+	background-color:yellow;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
