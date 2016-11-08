@@ -1,5 +1,11 @@
+@font-face {
+    font-family: proximanova;
+    src: url(../fonts/proximanova-reg-webfont.woff);
+    }
+
 body {
   padding-top: 50px;
+  font-family:proximanova;
 }
 
 /*******************************************************
@@ -243,9 +249,7 @@ margin:25px 0 0 30px;
 .guidline-second-section h4{
 	margin-bottom:30px;
 }
-.guidline-second-section h5{
-	margin-bottom:30px;
-}
+
 .guidline-second-section p{
 	margin-bottom:30px;
 }
