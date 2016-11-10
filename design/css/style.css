@@ -44,6 +44,12 @@ transform: scaleX(-1);
 -ms-transform: scaleX(-1);
 }
 
+.navbar-toggle {
+	background-color:#000;
+}
+
+
+
 /*first block*/
 .jumbotron{
 	background-color: #333339;
@@ -197,7 +203,6 @@ footer{
 	height: 2752px;
   background-color: #333339;
 }
-
 .active a{
 	color:#5bc0de !important;
 }
@@ -212,7 +217,6 @@ footer{
 	border-radius:0px !important;
 	 color: #fbfbfc;
 }
-
 .list-head{
 	/* cursor:none; */
 	color: #99999d !important;
@@ -285,7 +289,7 @@ margin:25px 30px 0 30px;
 
 @media(max-width : 768px){
 .main-nav-bar{
-		display:none;
+		/* display:none; */
 	}
 	.empathy-cards {
 		padding: 20px 0 20px 15px;

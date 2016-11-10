@@ -13,19 +13,27 @@
 
   <body>
 
-   <nav class="navbar navbar-fixed-top main-nav-bar">
+   <nav class="navbar navbar-fixed-top main-nav-bar" >
       <div class="container-fluid">
         <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
         <img src="img/group-copy.svg" class="pull-left logo-image">
           <a class="navbar-brand " href="#">DESIGN</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Principles</a></li>
-          <li ><a href="guidelines.html">Guidelines</a></li>
-          <li><a href="#">Team</a></li>
-        </ul>
+         <div id="navbar" class="navbar-collapse collapse">
+          <ul  class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Principles</a></li>
+            <li ><a href="guidelines.html">Guidelines</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
         <span class="glyphicon glyphicon-search icon-flipped pull-right"></span>
+      </div>
       </div>
   </nav>
     <div class="jumbotron"> <!--  first block  -->
