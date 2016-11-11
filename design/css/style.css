@@ -279,6 +279,21 @@ background-color: #fc7972;
   border-left: 5px solid #e56f66 !important;
 }
 
+/*******************************************************
+              * main components color *
+********************************************************/
+.inner-color-component{
+background-color:  #9cce4d;
+}
+.top-color-component{
+ background-color: #83ba41;
+}
+.component-active-list{
+  background-color: #555559 !important;
+  border-left: 5px solid #83ba41 !important;
+}
+
+
 
 /*******************************************************
 							*	media queries *
