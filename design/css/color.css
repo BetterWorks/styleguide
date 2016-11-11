@@ -1,16 +1,8 @@
+
+
 /*******************************************************
-              * color.html *
+              * color.html*
 ********************************************************/
-.inner-color-color{
-background-color: #fc7972;
-}
-.top-color-color{
- background-color: #e56f66;
-}
-.color-active-list{
-  background-color: #555559 !important;
-  border-left: 5px solid #e56f66 !important;
-}
 .color-content{
   margin: 25px 0;
 }
@@ -25,6 +17,8 @@ background-color: #fc7972;
 .box{
   width:50px;
   height:50px;
+  border-radius: 50% 0% 50% 50%;
+
 }
 .media-body p{
   margin: 0;
@@ -83,6 +77,9 @@ background-color: #fc7972;
 .row6 .box2{
   background-color: #dff3f9;
 }
+.row6 .box3{
+   background-color: #acdfee;
+}
 /*color disceription*/
 .color-discription{
   margin-top:25px;
@@ -90,14 +87,22 @@ background-color: #fc7972;
 .color-discription p{
   padding-left: 180px;
 }
+.s-box{
+  margin-left:-21px;
+}
+.t-box{
+   margin-left:-21px;
+}
 .cd-row1 .f-box{
   background-color:#63d8f4;
 }
 .cd-row1 .s-box{
   background-color:#5bc0de;
+
 }
 .cd-row1 .t-box{
   background-color:#59bad1;
+
 }
 .cd-row2 .f-box{
   background-color:#fc7972;
@@ -164,3 +169,5 @@ background-color: #444448;
 .g-row3 .box3{
   background-color: #333339;
 }
+
+

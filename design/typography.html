@@ -6,59 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Design System Project</title>
     <!-- Bootstrap core CSS -->
-    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../../css/style.css" rel="stylesheet">
-     <link href="../../css/components/tabbar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+     <link href="css/typography.css" rel="stylesheet">
   </head>
 
   <body>
-
-
    <nav class="navbar navbar-fixed-top main-nav-bar">
       <div class="container-fluid">
         <div class="navbar-header">
-        <img src="../../img/group-copy.svg" class="pull-left logo-image">
-          <a class="navbar-brand " href="../../index.html">DESIGN</a>
+        <img src="img/group-copy.svg" class="pull-left logo-image">
+          <a class="navbar-brand " href="index.html">DESIGN</a>
         </div>
         <ul class="nav navbar-nav">
           <li><a href="">About</a></li>
           <li><a href="#">Principles</a></li>
-          <li class="active"><a href="../../guidelines.html">Guidelines</a></li>
+          <li class="active"><a href="guidelines.html">Guidelines</a></li>
           <li><a href="#">Team</a></li>
         </ul>
         <span class="glyphicon glyphicon-search icon-flipped pull-right"></span>
       </div>
-
   </nav>
 
-  <div class="container-fluid inner-background-color inner-color-tabbar">
-    <div class="row  top-background-color top-color-tabbar">
+  <div class="container-fluid inner-background-color inner-color-foundation">
+    <div class="row  top-background-color top-color-foundation">
     <div class="row inverse-background" >
     <!--Nav section-->
       <div class="col-sm-2 p-0 ">
         <div class="row all-list-group">
         <div class="list-group sidebar-list-group">
-          <a href="#" class="list-group-item list-head">
+          <a href="#" class="list-group-item list-head" >
             Over view
           </a>
-          <a href="../../guidelines.html" class="list-group-item ">Introduction</a>
+          <a href="guidelines.html" class="list-group-item ">Introduction</a>
           <a href="#" class="list-group-item">Design System Structure</a>
         </div>
         <div class="list-group sidebar-list-group">
           <a href="#" class="list-group-item list-head">
             Foundation
           </a>
-          <a href="../../color.html" class="list-group-item">Color</a>
-          <a href="../../typography.html" class="list-group-item">Typography</a>
-          <a href="../../grid.html" class="list-group-item">Grid</a>
+          <a href="color.html" class="list-group-item ">Color</a>
+          <a href="" class="list-group-item foundation-active-list">Typography</a>
+          <a href="grid.html" class="list-group-item ">Grid</a>
           <a href="#" class="list-group-item">Graphics</a>
         </div>
         <div class="list-group sidebar-list-group">
-          <a href="#" class="list-group-item list-head">
+           <a  class="list-group-item list-head"  href="#">
             Component
           </a>
-          <a href="" class="list-group-item tabbar-active-list">Tab Bar</a>
+
+          <a href="view/component/tabbar.html" class="list-group-item">Tab Bar</a>
           <a href="#" class="list-group-item">Navigation Bar</a>
           <a href="#" class="list-group-item">Tab</a>
           <a href="#" class="list-group-item">Progress</a>
@@ -67,6 +66,21 @@
           <a href="#" class="list-group-item">Button</a>
           <a href="#" class="list-group-item">Loader</a>
           <a href="#" class="list-group-item">Input Field</a>
+
+             <!-- <a  class="list-group-item list-head" data-toggle="collapse" href="#collapseTC001A">
+                Component
+              </a>
+              <div class="panel-collapse collapse" id="collapseTC001A">
+              <a href="#" class="list-group-item">Tab Bar</a>
+              <a href="#" class="list-group-item">Navigation Bar</a>
+              <a href="#" class="list-group-item">Tab</a>
+              <a href="#" class="list-group-item">Progress</a>
+              <a href="#" class="list-group-item">Profile Picture</a>
+              <a href="#" class="list-group-item">Banner</a>
+              <a href="#" class="list-group-item">Button</a>
+              <a href="#" class="list-group-item">Loader</a>
+              <a href="#" class="list-group-item">Input Field</a>
+            </div> -->
         </div>
          <div class="list-group sidebar-list-group">
           <a href="#" class="list-group-item list-head">
@@ -96,32 +110,41 @@
           <a href="#" class="list-group-item">Error Copy</a>
 
         </div>
-
         </div>
       </div>
 
       <!--second section-->
 
-
       <div class="col-sm-7 guidelines-sub-content">
-      <div class="guidline-first-section">
-        <p>Over View</p>
-        <h4>Introduction</h4>
-      </div>
-      <div class="guidline-second-section">
-        <h4><strong>Test Lorem Ipsum</strong> </h4>
-        <p>BetterWorks mobile products are key members of BetterWorks product family. We embrace our overall product design principles and value the difference in mobile context at the same time. We expect to always deliver a killer mobile product that meets high expectation of functionality and experience for our users. When we evaluate our opportunity, problems to be solved and potential solution directions, we consider the following aspects:</p>
+        <div class="guidline-first-section">
+          <p>Foundation</p>
+          <h4>Grid</h4>
+        </div>
+        <div class="guidline-second-section">
+          <h5><strong>INTRO</strong> </h5>
+          <p class="color-content">BetterWorks app is built on a vertical 12-column grid system with fixed gutters at 20px. The total width for the layout grids are set for 960px.</p>
+           <p class="color-content">Column widths are defined as percentages and therefore are responsive to various viewports. For a better experience on a wide range of devices, breakpoints are set to adjust the layout based on the grid system. To be precise, the border and padding is included in the width of the grid columns according to border-box. </p>
+
+           <h5><strong>LAYOUT TYPE</strong> </h5>
+          <p class="color-content">We apply our grid system in three types of layouts: Centered Fixed Container, Full Fluid Container and Fluid Container with Fixed Navigation.</p>
+
+        </div>
 
       </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
 
   </div>
   </div>
 </div>
-
-
-
-
 
     <!-- Bootstrap core JavaScript -->
 

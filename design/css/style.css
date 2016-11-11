@@ -46,6 +46,7 @@ transform: scaleX(-1);
 
 .navbar-toggle {
 	background-color:#000;
+	color:#fff;
 }
 
 
@@ -264,7 +265,19 @@ margin:25px 30px 0 30px;
 	margin-bottom:30px;
 }
 
-
+/*******************************************************
+              * main foundation color*
+********************************************************/
+.inner-color-foundation{
+background-color: #fc7972;
+}
+.top-color-foundation{
+ background-color: #e56f66;
+}
+.foundation-active-list{
+  background-color: #555559 !important;
+  border-left: 5px solid #e56f66 !important;
+}
 
 
 /*******************************************************

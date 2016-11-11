@@ -1,0 +1,41 @@
+/*******************************************************
+              * grid.html *
+********************************************************/
+/*
+.table,.table-borderless thead tr th,
+.table-borderless tbody tr th,
+.table-borderless tbody tr td {
+  border: solid 1px #dadada;
+} */
+
+
+.table-borderless{
+  border: solid 1px #dadada;
+}
+.table-borderless thead tr th{
+ border-right: 1px solid #dadada;
+ border-bottom: 1px solid #dadada;
+ padding-bottom: 15px;
+}
+.table-borderless tbody tr td{
+  border-right: 1px solid #dadada;
+ border-bottom: 1px solid #fff;
+}
+.table-borderless tfoot tr td{
+  border-right: 1px solid #dadada;
+}
+
+
+.col-md-6{
+
+  background-color:#9cce4d;
+  border: 15px solid #f2f2f2;
+}
+.col-md-1,
+.col-md-11{
+  background-color:#9cce4d;
+  border: 15px solid #f2f2f2;
+}
+.inner{
+  height:25px;
+}
