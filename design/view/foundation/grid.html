@@ -122,44 +122,61 @@
         <div class="guidline-second-section">
           <h5><strong>INTRO</strong> </h5>
           <p class="color-content">BetterWorks app is built on a vertical 12-column grid system with fixed gutters at 20px. The total width for the layout grids are set for 960px.</p>
-           <p class="color-content">Column widths are defined as percentages and therefore are responsive to various viewports. For a better experience on a wide range of devices, breakpoints are set to adjust the layout based on the grid system. To be precise, the border and padding is included in the width of the grid columns according to border-box. </p>
+           <p class="color-content">Column widths are defined as percentages and therefore are responsive to various viewports. For a better experience on a wide range of devices, breakpoints are set to adjust the layout based on the grid system. To be precise, the border and padding is included in the width of the grid columns according to border-grid-box. </p>
 
            <h5><strong>LAYOUT TYPE</strong> </h5>
           <p class="color-content">We apply our grid system in three types of layouts: Centered Fixed Container, Full Fluid Container and Fluid Container with Fixed Navigation.</p>
           <table class="table  table-borderless">
             <thead>
               <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-                <th>Email</th>
+                <th>Type</th>
+                <th>1. Centered Fixed Container</th>
+                <th>2. Full Fluid Container</th>
+                <th>3. Fluid Container with Fixed Navigation</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-                 <td>john@example.com</td>
+                <td>Total Width</td>
+                <td>960px</td>
+                <td>960px</td>
+                 <td>960px</td>
               </tr>
               <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-                <td>mary@example.com</td>
+                <td>Offset</td>
+                <td>Center</td>
+                <td>250px</td>
+                <td>0px</td>
               </tr>
-
-
+               <tr>
+                <td>Number of Columns</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+              </tr>
+               <tr>
+                <td>Gutter on outside</td>
+                <td>YES (2 x 10px)</td>
+                <td>YES (2 x 10px)</td>
+                <td>YES (2 x 10px)</td>
+              </tr>
+               <tr>
+                <td>Gutter Width</td>
+                <td>20px</td>
+                <td>20px</td>
+                <td>20px</td>
+              </tr>
             </tbody>
             <tfoot>
               <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-                <td>july@example.com</td>
+                <td>Column Width</td>
+                <td>60px</td>
+                <td>60px</td>
+                <td>60px</td>
               </tr>
             </tfoot>
           </table>
+          <p>Note: three layout types have the same base grid, but they have different breakpoints </p>
         </div>
 
       </div>
@@ -176,11 +193,115 @@
         </div>
       </div>
 
+      <div class="col-sm-7 guidelines-sub-content">
+       <div class="row">
+        <h5><strong>LAYOUTS IN GRID</strong> </h5>
+        <p>Based on the content, three layouts are used in our product:</p>
+        <p>1. Centered Fixed Container</p>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="row outer-yello-box">
+              <div class="inner-boxes">
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="size-specification">
+              <p> Artboard size: 1024px </p>
+              <p>  Column size: 60px </p>
+              <p> Gutter size: 20px </p>
+              <p> Offset: center </p>
+            </div>
+          </div>
+          </div>
+           <p>2. Full Fluid Container </p>
+          <div class="row">
+          <div class="col-xs-6">
+            <div class="row outer-yello-box">
+              <div class="inner-boxes">
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div> <div class="mycontent-left"></div>
+              <div class="grid-box"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="size-specification">
+              <p> Artboard size: 1024px </p>
+              <p>  Column size: 60px </p>
+              <p> Gutter size: 20px </p>
+              <p> Offset: center </p>
+            </div>
+          </div>
+          </div>
 
 
 
+        </div>
+      </div>
 
 
+      <div class="col-sm-7 guidelines-sub-content">
+       <div class="row">
+          <div class="guidline-second-section">
+          <h5><strong>RESPONSIVE LAYOUTS</strong> </h5>
+          <p class="">BetterWorks app is built on a vertical 12-column grid system with fixed gutters at 20px. The total width for the layout grids are set for 960px.</p>
+
+           <h5><strong>LAYOUT TYPE</strong> </h5>
+          <p class="color-content">We apply our grid system in three types of layouts: Centered Fixed Container, Full Fluid Container and Fluid Container with Fixed Navigation.</p>
+
+          <table class="table table-borderless responsive-table">
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>Extra small <br>&lt; 768px</th>
+                <th>Small devices <br> ≥ 768p</th>
+                <th>Medium devices <br>≥ 102</th>
+                <th>Large devices<br> ≥ 1210</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Total Width</td>
+                <td>Full size</td>
+                <td>750px</td>
+                 <td>960px</td>
+                 <td>1170px</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Artboard Example</td>
+                <td>320px</td>
+                <td>768px</td>
+                <td>1024px</td>
+                <td>1440px</td>
+              </tr>
+            </tfoot>
+          </table>
+
+        </div>
+        </div>
+      </div>
 
 
   </div>

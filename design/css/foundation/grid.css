@@ -1,13 +1,6 @@
 /*******************************************************
               * grid.html *
 ********************************************************/
-/*
-.table,.table-borderless thead tr th,
-.table-borderless tbody tr th,
-.table-borderless tbody tr td {
-  border: solid 1px #dadada;
-} */
-
 
 .table-borderless{
   border: solid 1px #dadada;
@@ -15,7 +8,8 @@
 .table-borderless thead tr th{
  border-right: 1px solid #dadada;
  border-bottom: 1px solid #dadada;
- padding-bottom: 15px;
+ padding-bottom: 25px;
+
 }
 .table-borderless tbody tr td{
   border-right: 1px solid #dadada;
@@ -24,6 +18,50 @@
 .table-borderless tfoot tr td{
   border-right: 1px solid #dadada;
 }
+
+
+.responsive-table thead tr th{
+  border-right: none;
+  padding-top: 25px;
+}
+.responsive-table tbody tr td{
+  border-right: none;
+}
+.responsive-table tfoot tr td{
+  border-right: none;
+}
+
+.grid-box{
+  float: left;
+   width: 42px;
+  height: 140px;
+  background-color: #f2f2f2;
+  border-right:3px solid  #e6e6e6;
+  border-left:3px solid #e6e6e6;
+}
+.outer-yello-box{
+   max-width: 512px;
+  height: 150px;
+  background-color: #feec6c;
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.mycontent-left {
+   float: left;
+   width: 0px;
+  height: 140px;
+  border-right: 1px solid #fff;
+}
+.inner-boxes{
+  margin: 5px 0 0 20px;
+}
+.size-specification{
+  margin-top: 30px;
+}
+.size-specification p{
+  margin:0;
+}
+
 
 
 .col-md-6{
@@ -39,3 +77,12 @@
 .inner{
   height:25px;
 }
+
+
+
+
+
+
+
+
+
