@@ -1,38 +1,43 @@
 /*******************************************************
               * grid.html *
 ********************************************************/
-.p-10
-{
-    padding: 10px!important;
-}
-.m-b-10
-{
-    margin-bottom: 10px !important;
-}
-.info
-{
-    background-color:#f47873;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 12px;
-}
+
+
 .greencol
 {
     background-color: #9dcc57;
+    padding: 5px!important;
+    color: #fbfbfb;
+    font-size: 10px;
+    margin:10px 0;
 }
 .bluecol
 {
     background-color: #69d8f2;
+     padding: 5px!important;
+     color: #fbfbfb;
+    font-size: 10px;
+    margin:10px 0;
 }
 .orangecol
 {
     background-color: #fda23a;
+     padding: 10px!important;
 }
 
 .background-style{
-  background: repeating-linear-gradient(90deg,#e6e6e6 0%,#e6e6e6 1.3%, #f2f2f2 1.3%,#f2f2f2 6.95%,#e6e6e6 6.95%,#e6e6e6 8.25%, #fff 8.25%, #fff 8.35%);
+  background: repeating-linear-gradient(90deg,#e6e6e6 0%,#e6e6e6 1.3%,
+   #f2f2f2 1.3%,#f2f2f2 6.95%,#e6e6e6 6.95%,#e6e6e6 8.25%, #fff 8.25%, #fff 8.35%);
 }
-
+.first-row{
+  margin-top:20px;
+}
+.last-row{
+  margin-bottom:20px;
+}
+.grid-paragraph{
+  margin:0;
+}
 
 
 .table-borderless{
