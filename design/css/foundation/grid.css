@@ -30,7 +30,18 @@
 .responsive-table tfoot tr td{
   border-right: none;
 }
-
+.gridContainer{                /************image*********/
+  margin-top:50px;
+}
+.gridContainer img{
+   width: 100%;
+    height: auto;
+}
+/*yelloo grid part*/
+.yellow{
+  width: 100%;
+    height: auto;                   /************image*********/
+}
 .grid-box{
   float: left;
    width: 42px;
@@ -45,6 +56,7 @@
   background-color: #feec6c;
   margin-left: 0px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 .mycontent-left {
    float: left;
@@ -53,7 +65,7 @@
   border-right: 1px solid #fff;
 }
 .inner-boxes{
-  margin: 5px 0 0 20px;
+  margin: 5px 0 5px 20px;
 }
 .size-specification{
   margin-top: 30px;
@@ -61,6 +73,96 @@
 .size-specification p{
   margin:0;
 }
+.outer-yello-box2{
+   max-width: 472px;
+  height: 150px;
+  background-color: #feec6c;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.inner-boxes2{
+  margin: 5px 0 5px 0px;
+}
+.size-specification2{
+  margin-top: 30px;
+  margin-left:-35px;
+}
+.size-specification2 p{
+  margin:0;
+}
+.outer-yello-box3{
+   max-width: 555px;
+  height: 150px;
+  background-color: #feec6c;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.grid-box1{
+  width: 125px;
+  height: 140px;
+  background-color: #999999;
+  float: left;
+}
+/*gray box*/
+.main-gray-box{
+   max-width: 960px;
+  height: 195px;
+  background-color: #f2f2f2;
+}
+.first-inner-box{
+  width: 150px;
+  height: 195px;
+  background-color: #d8d8d8;
+  float: left;
+  margin:0 30px;
+}
+.box{
+   width: 150px;
+  height: 40px;
+}
+.inner-box1{
+  background-color: #5bc0de;
+}
+.inner-box2{
+  background-color: #f4e565;
+
+}
+.inner-box3{
+  background-color: #83ba41;
+
+}
+.second-inner-box{
+  width: 168.8px;
+  height: 195px;
+  background-color: #d8d8d8;
+  float: left;
+  margin:0 55px;
+}
+.box2{
+  width: 168.8px;
+  height: 40px;
+}
+.second-inner-box .inner-box1{
+  background: linear-gradient(to right, #5bc0de 20%,#f4e565 20%);
+}
+.second-inner-box .inner-box2{
+  background-color: #83ba41;
+}
+.theird-inner-box{
+width: 234.4px;
+  height: 195px;
+  background-color: #d8d8d8;
+  float: left;
+  margin-left:30px;
+}
+.theird-inner-box .inner-box1{
+  width: 234.4px;
+  height: 40px;
+background: linear-gradient(to right,  #5bc0de 15%, #f4e565 15%, #f4e565 65%, #83ba41 65%);
+}
+
 
 
 
