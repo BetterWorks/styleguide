@@ -1,6 +1,39 @@
 /*******************************************************
               * grid.html *
 ********************************************************/
+.p-10
+{
+    padding: 10px!important;
+}
+.m-b-10
+{
+    margin-bottom: 10px !important;
+}
+.info
+{
+    background-color:#f47873;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px;
+}
+.greencol
+{
+    background-color: #9dcc57;
+}
+.bluecol
+{
+    background-color: #69d8f2;
+}
+.orangecol
+{
+    background-color: #fda23a;
+}
+
+.background-style{
+  background: repeating-linear-gradient(90deg,#e6e6e6 0%,#e6e6e6 1.3%, #f2f2f2 1.3%,#f2f2f2 6.95%,#e6e6e6 6.95%,#e6e6e6 8.25%, #fff 8.25%, #fff 8.35%);
+}
+
+
 
 .table-borderless{
   border: solid 1px #dadada;
@@ -30,6 +63,8 @@
 .responsive-table tfoot tr td{
   border-right: none;
 }
+
+
 .gridContainer{                /************image*********/
   margin-top:50px;
 }
@@ -116,7 +151,7 @@
   height: 195px;
   background-color: #d8d8d8;
   float: left;
-  margin:0 30px;
+  margin:0 10px;
 }
 .box{
    width: 150px;
@@ -138,7 +173,7 @@
   height: 195px;
   background-color: #d8d8d8;
   float: left;
-  margin:0 55px;
+  margin:0 10px;
 }
 .box2{
   width: 168.8px;
@@ -163,22 +198,6 @@ width: 234.4px;
 background: linear-gradient(to right,  #5bc0de 15%, #f4e565 15%, #f4e565 65%, #83ba41 65%);
 }
 
-
-
-
-.col-md-6{
-
-  background-color:#9cce4d;
-  border: 15px solid #f2f2f2;
-}
-.col-md-1,
-.col-md-11{
-  background-color:#9cce4d;
-  border: 15px solid #f2f2f2;
-}
-.inner{
-  height:25px;
-}
 
 
 
