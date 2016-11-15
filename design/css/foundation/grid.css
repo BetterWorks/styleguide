@@ -14,15 +14,18 @@
 .bluecol
 {
     background-color: #69d8f2;
-     padding: 5px!important;
-     color: #fbfbfb;
+    padding: 5px!important;
+    color: #fbfbfb;
     font-size: 10px;
     margin:10px 0;
 }
 .orangecol
 {
     background-color: #fda23a;
-     padding: 10px!important;
+    padding: 5px!important;
+    color: #fbfbfb;
+    font-size: 10px;
+    margin:10px 0;
 }
 
 .background-style{
