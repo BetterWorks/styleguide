@@ -3,6 +3,37 @@
 ********************************************************/
 
 
+
+.table-borderless{
+  border: solid 1px #dadada;
+}
+.table-borderless thead tr th{
+ border-right: 1px solid #dadada;
+ border-bottom: 1px solid #dadada;
+ padding-bottom: 25px;
+
+}
+.table-borderless tbody tr td{
+  border-right: 1px solid #dadada;
+ border-bottom: 1px solid #fff;
+}
+.table-borderless tfoot tr td{
+  border-right: 1px solid #dadada;
+}
+
+
+.responsive-table thead tr th{
+  border-right: none;
+  padding-top: 25px;
+}
+.responsive-table tbody tr td{
+  border-right: none;
+}
+.responsive-table tfoot tr td{
+  border-right: none;
+}
+
+/************* GRID ***************/
 .greencol
 {
     background-color: #9dcc57;
@@ -41,49 +72,13 @@
 .grid-paragraph{
   margin:0;
 }
+/************* END GRID ***************/
 
 
-.table-borderless{
-  border: solid 1px #dadada;
-}
-.table-borderless thead tr th{
- border-right: 1px solid #dadada;
- border-bottom: 1px solid #dadada;
- padding-bottom: 25px;
-
-}
-.table-borderless tbody tr td{
-  border-right: 1px solid #dadada;
- border-bottom: 1px solid #fff;
-}
-.table-borderless tfoot tr td{
-  border-right: 1px solid #dadada;
-}
-
-
-.responsive-table thead tr th{
-  border-right: none;
-  padding-top: 25px;
-}
-.responsive-table tbody tr td{
-  border-right: none;
-}
-.responsive-table tfoot tr td{
-  border-right: none;
-}
-
-
-.gridContainer{                /************image*********/
-  margin-top:50px;
-}
-.gridContainer img{
-   width: 100%;
-    height: auto;
-}
 /*yelloo grid part*/
 .yellow{
   width: 100%;
-    height: auto;                   /************image*********/
+  height: auto;                   /************image*********/
 }
 .grid-box{
   float: left;
@@ -93,22 +88,11 @@
   border-right:3px solid  #e6e6e6;
   border-left:3px solid #e6e6e6;
 }
-.outer-yello-box{
-   max-width: 512px;
-  height: 150px;
-  background-color: #feec6c;
-  margin-left: 0px;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
 .mycontent-left {
    float: left;
    width: 0px;
   height: 140px;
   border-right: 1px solid #fff;
-}
-.inner-boxes{
-  margin: 5px 0 5px 20px;
 }
 .size-specification{
   margin-top: 30px;
@@ -129,31 +113,44 @@
 }
 .size-specification2{
   margin-top: 30px;
-  margin-left:-35px;
+  position: relative;
+  left: 0px;
 }
 .size-specification2 p{
   margin:0;
 }
-.outer-yello-box3{
-   max-width: 555px;
-  height: 150px;
-  background-color: #feec6c;
-  margin-left: 0px;
-  margin-bottom: 10px;
-  overflow: hidden;
+
+/*gray box after yellow section */
+
+.gridContainer{                /************image*********/
+  margin-top:50px;
 }
-.grid-box1{
-  width: 125px;
-  height: 140px;
-  background-color: #999999;
-  float: left;
+.gridContainer img{
+   width: 100%;
+    height: auto;
 }
-/*gray box*/
+.responsive-heading{
+  margin-top:30px;
+}
+
+
+
+
+
+
+
 .main-gray-box{
    max-width: 960px;
   height: 195px;
   background-color: #f2f2f2;
 }
+.responsive-img{
+   width: 100%;
+  max-height: 195px;
+}
+
+
+
 .first-inner-box{
   width: 150px;
   height: 195px;

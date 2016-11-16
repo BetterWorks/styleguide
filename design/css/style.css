@@ -201,7 +201,7 @@ footer{
 }
 .all-list-group{
 	margin:0px;
-	height: 3825px;
+	height: 5825px;
   background-color: #333339;
 }
 .active a{
@@ -266,13 +266,13 @@ margin:25px 30px 0 30px;
 }
 
 /*******************************************************
-              * main foundation color*
+              * foundation color*
 ********************************************************/
 .inner-color-foundation{
-background-color: #fc7972;
+background-color: #e56f66;
 }
 .top-color-foundation{
- background-color: #e56f66;
+ background-color: #fc7972 ;
 }
 .foundation-active-list{
   background-color: #555559 !important;
@@ -280,13 +280,13 @@ background-color: #fc7972;
 }
 
 /*******************************************************
-              * main components color *
+              * components color *
 ********************************************************/
 .inner-color-component{
-background-color:  #9cce4d;
+background-color:  #83ba41;
 }
 .top-color-component{
- background-color: #83ba41;
+ background-color:  #9cce4d;
 }
 .component-active-list{
   background-color: #555559 !important;
