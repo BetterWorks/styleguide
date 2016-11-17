@@ -1,6 +1,32 @@
 /*******************************************************
               * typography.css *
 ********************************************************/
+
+.typespace{
+  border-radius: 2px;
+  border: solid 1px #dadada;
+  margin: 20px 0px;
+
+}
+.first-typespace{
+  margin-top:150px;
+  color: #99999d;
+}
+.font-size{
+  color: #99999d;
+  text-align: right;
+  margin:20px 0;
+  font-size: 18px;
+}
+.font-message{
+  margin:20px 0;
+}
+.font-message1{
+  margin:30px 0;
+}
+
+/******* table ******/
+
 .table-borderless{
   border: solid 1px #dadada;
 }
@@ -20,15 +46,4 @@
 
 .border-less{
    border-right: none !important;
-}
-
-.typespace{
-  border-radius: 2px;
-  border: solid 1px #dadada;
-  margin: 20px 0px;
-
-}
-.first-typespace{
-  margin-top:150px;
-  color: #99999d;
 }

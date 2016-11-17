@@ -119,6 +119,9 @@
 .size-specification2 p{
   margin:0;
 }
+.fluid-container{
+  margin-top:10px;
+}
 
 /*gray box after yellow section */
 
@@ -137,15 +140,11 @@
 /*last section in grid */
 
 .main-gray-box{
-   max-width: 960px;
+   max-width: 1130px;
    max-height: 195px;
   background-color: #f2f2f2;
     overflow:scroll;
 }
-/*.responsive-img{
-   width: 100%;
-  height: auto;
-} */
 .box1{
    max-width: 150px;
   height: auto;
@@ -170,9 +169,15 @@
   float: left;
 margin-left: 20px;
 }
-
-
-
+.first-para-res{
+ margin-top:20px;
+}
+.heading-each-res{
+  margin:20px 0 0 0;
+}
+.discription-each-res{
+  margin-bottom:20px;
+}
 
 
 
