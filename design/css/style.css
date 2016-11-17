@@ -48,6 +48,9 @@ transform: scaleX(-1);
 	background-color:#000;
 	color:#fff;
 }
+.navbar-active{
+	 background-color: #555559 !important;
+}
 
 
 
