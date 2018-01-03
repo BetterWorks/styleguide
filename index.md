@@ -190,6 +190,15 @@ MoreCustomService, NewService) ->
   ...
 ```
 
+- Only declare controller variables on `this` if they are used in the respective HTML
+
+```coffeescript
+# used in HTML
+this.myVar1 = 1
+# only used in controller
+myVar2 = 2
+```
+
 - One way binding and functions passed down over two way binding
 
 ```coffeescript
