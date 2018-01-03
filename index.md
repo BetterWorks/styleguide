@@ -11,7 +11,8 @@
 - [3.0 Django / Python](#30-django--python)
   - [3.1 Basics](#31-basics)
   - [3.2 Strings](#32-strings)
-- [4.0 Styleguide](#40-styleguide)
+- [4.0 HTML](#40-html)
+- [5.0 Styleguide](#50-styleguide)
 
 
 ### 1.0 General
@@ -298,7 +299,19 @@ world = 'World'
 a_string = '%s %s' % (hello, world)
 ```
 
-### 4.0 Styleguide
+### 4.0 HTML
+
+- Double quotes for attribute values
+
+```html
+<!--bad-->
+<my-component class='my-class'></my-component>
+
+<!--good-->
+<my-component class="my-class"></my-component>
+```
+
+### 5.0 Styleguide
 
 - Main headers should be 3 hash symbols and sentence case, starting with a number in format x.0
 
