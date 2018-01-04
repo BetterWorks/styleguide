@@ -181,6 +181,19 @@ app.controller 'ComponentNameController', ->
   return
 ```
 
+- Put controller initialization code in `$onInit` rather than on the top level of the controller
+
+```coffeescript
+# bad
+app.controller 'myCtrl', ->
+  this.foo = 'bar'
+
+# good
+app.controller 'myCtrl', ->
+  this.$onInit = =>
+    this.foo = 'bar'
+```
+
 - Multi-line injects should linebreak with no additional indent
 
 ```coffeescript
