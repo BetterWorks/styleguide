@@ -333,6 +333,19 @@ a_string = '%s %s' % (hello, world)
 <my-component class="my-class"></my-component>
 ```
 
+- The order of element attributes is as follows
+1. HTML attributes
+2. Angular attributes
+3. data-ptor
+
+```html
+<my-great-component
+  class="class1 class2"
+  ng-if="someBool"
+  data-ptor="great-component">
+</my-great-component>
+```
+
 ### 5.0 Styleguide
 
 - Main headers should be 3 hash symbols and sentence case, starting with a number in format x.0
