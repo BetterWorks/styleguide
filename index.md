@@ -11,6 +11,7 @@
 - [3.0 Django / Python](#30-django--python)
   - [3.1 Basics](#31-basics)
   - [3.2 Strings](#32-strings)
+  - [3.3 Lists](#33-lists)
 - [4.0 HTML](#40-html)
 - [5.0 Styleguide](#50-styleguide)
 
@@ -319,6 +320,83 @@ a_string = 'Hello %s' % world
 hello = 'Hello'
 world = 'World'
 a_string = '%s %s' % (hello, world)
+```
+
+#### 3.3 Lists
+
+- Collections (list, tuple, dictionary) or parameter lists should be single line when within the
+character limit
+
+```python
+# bad
+first_list = [1,
+              2,
+              3]
+
+second_dict = {
+    1: 'one',
+    2: 'two',
+    3: 'three'
+]
+
+def third_function(
+  one, two=2, three=3
+):
+    ...
+
+# good
+first_list = [1, 2, 3]
+
+second_dict = {1: 'one', 2: 'two', 3: 'three'}
+
+def third_function(one, two=2, three=3):
+    ...
+```
+
+- If the list is longer than a line, then break all entries onto their own lines and end each with a
+comma, even the last entry
+- YAPF will recognize the last dangling comma and format multi-line collections properly
+
+```python
+# bad
+first_list = [
+    1,
+    2,
+    3  # missing final comma
+]
+
+second_dict = {
+    1: 'one',
+    2: 'two',
+    3: 'three'  # missing final comma
+}
+
+def third_function(
+    one,
+    two=2, 
+    three=3  # missing final comma
+):
+    ...
+
+# good
+first_list = [
+    1,
+    2,
+    3,  # has a dangling comma
+]
+
+second_dict = {
+    1: 'one',
+    2: 'two',
+    3: 'three',  # has a dangling comma
+}
+
+def third_function(
+    one,
+    two=2,
+    three=3,  # has a dangling comma
+):
+    ...
 ```
 
 ### 4.0 HTML
