@@ -323,6 +323,7 @@ a_string = '%s %s' % (hello, world)
 ```
 
 #### 3.3 Lists
+
 - Collections (list, tuple, dictionary) or parameter lists should be single line when within the
 character limit
 
