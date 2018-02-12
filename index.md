@@ -12,6 +12,7 @@
   - [3.1 Basics](#31-basics)
   - [3.2 Strings](#32-strings)
   - [3.3 Lists](#33-lists)
+  - [3.4 Tests](#34-tests)
 - [4.0 HTML](#40-html)
 - [5.0 Styleguide](#50-styleguide)
 
@@ -373,7 +374,7 @@ second_dict = {
 
 def third_function(
     one,
-    two=2, 
+    two=2,
     three=3  # missing final comma
 ):
     ...
@@ -397,6 +398,24 @@ def third_function(
     three=3,  # has a dangling comma
 ):
     ...
+```
+
+#### 3.4 Tests
+
+- Tests that assert query counts should include a comment that explains what is causing the queries.
+The comment should be able to explain, for each query, which table and for what purpose it was made.
+- Tip 1: Grab the raw SQL and understand/explain each query.
+- Tip 2: If updating a num queries test, get the SQL for what it used to be and for what you changed
+it to and diff the two to get to the bottom of exactly which query your change added/removed and
+update the comment.
+
+```python
+# 1 - get template
+# 1 - get conversation
+# 2 - get employee, manager questions
+# 2 - get employee, manager
+with self.assertNumQueries(6):
+    SomeConversationSerializer(conversation, many=True).data
 ```
 
 ### 4.0 HTML
